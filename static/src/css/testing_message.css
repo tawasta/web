@@ -11,7 +11,8 @@
 	width: 100%;
 	padding: 1% 0 1% 45%;
 	background-color: #000;
-	border: 5px solid #df3f3f;
+	border-top: 5px solid #df3f3f;
+	border-bottom: 5px solid #df3f3f;
 	color: #fff;
 	font-weight: 900;
 	opacity: 0.6;
