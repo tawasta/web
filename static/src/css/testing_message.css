@@ -7,15 +7,17 @@
 	position: absolute;
 	bottom: 0;
 	z-index: 5000;
-	margin: 0;
+	margin: 0 auto;
 	width: 100%;
-	padding: 1% 0 1% 45%;
+	padding: 1% 0 1% 35%;
 	background-color: #000;
-	border-top: 5px solid #df3f3f;
-	border-bottom: 5px solid #df3f3f;
 	color: #fff;
 	font-weight: 900;
 	opacity: 0.6;
 	pointer-events: none;
 	font-size: 1.2em;
+}
+
+.redText{
+	color: #df3f3f;
 }
