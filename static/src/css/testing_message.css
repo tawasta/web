@@ -1,0 +1,23 @@
+@charset "utf-8";
+.openerp .announcement_bar {
+	display: none;
+}
+
+#testing_message{
+	position: absolute;
+	bottom: 0;
+	z-index: 5000;
+	margin: 0;
+	width: 100%;
+	padding: 0.5% 0 0.5% 45%;
+	background-color: #000;
+	border-top: 5px solid #df3f3f;
+	border-bottom: 5px solid #df3f3f;
+	color: #fff;
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+#testing_message:hover{
+	opacity: 0.3;
+}
