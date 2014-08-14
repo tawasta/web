@@ -1,7 +1,4 @@
 @charset "utf-8";
-.openerp .announcement_bar {
-	display: none;
-}
 
 #testing_message{
 	position: absolute;
