@@ -18,7 +18,7 @@
     'version': '0.1',
     'author': 'Vizucom Oy',
     'website': 'http://www.vizucom.com',
-    'depends': ['remove_announcement_bar'],
+    'depends': [],
     'description': "A constantly visible testing environment message",
     'data' : ["views/testing_message.xml", ],
 }

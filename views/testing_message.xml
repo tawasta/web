@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+        <template id="assets_backend" name="testing_message assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/testing_message/static/src/css/testing_message.css"/>
+            </xpath>
+        </template>  
+    
         <template id="web_webclient_bootstrap" name="testing_message webclient_bootstrap" inherit_id="web.webclient_bootstrap">
             <xpath expr="//nav[1]" position="before">
 				<p id="testing_message">A TESTING ENVIRONMENT - <span class='redText'>ALL CHANGES WILL BE DISCARDED</span></p>
