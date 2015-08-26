@@ -1,0 +1,97 @@
+/* ALL ELEMENTS */
+html, body, .openerp{
+	font-family: "Ubuntu", "Open Sans", sans-serif;
+}
+
+/* NAVBAR */
+.navbar-inverse {
+    background: linear-gradient(to bottom, #000, #444, #000);
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background: none
+}
+
+.openerp .oe_secondary_menu_section {
+    /* color: #f7a23c; */
+}
+
+/* LEFT NAVBAR */
+.openerp .oe_leftbar {
+	background: linear-gradient(to left, #f0eeee, #fefefe, #f0eeee);
+	border-right: none;
+}
+
+.openerp .nav-pills > li.active > a, .openerp a.list-group-item.active > a {
+    background: linear-gradient(to left, #7c7bad, #a1a1c4, #7c7bad);
+}
+
+.nav-pills > li > a:hover, .nav-pills > li > a:focus{
+	background: linear-gradient(to left, #d9d9d9, #f2f2f2, #d9d9d9);
+	border-radius: 0;
+}
+
+.openerp .oe_leftbar > div .oe_footer {
+    background: none;
+}
+
+/* TOP BAR */
+.openerp .oe_view_manager_current > .oe_view_manager_header {
+	background: linear-gradient(to bottom, #f0eeee, #fefefe, #f0eeee);
+	border: none;
+}
+
+/* VIEW MENU */
+#oe_main_menu_navbar li a, #oe_main_menu_navbar li button {
+ 	font-weight: bold;
+ 	outline: 0;
+}
+
+/* FORM HEADER */
+.openerp .oe_form header {
+    background: linear-gradient(to bottom, #f0eeee, #fefefe);
+    border-bottom: none;
+}
+
+/* BUTTONS */
+/* All buttons */
+.openerp button {
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.openerp a.button:link, .openerp a.button:visited, .openerp button, .openerp .oe_button, .openerp input[type="submit"] {
+	background-image: none;
+	background: #e3e3e3;
+	border: none;
+	box-shadow: none;
+}
+
+/* Send by Email, Print, etc. buttons */
+.openerp .oe_view_manager_current .oe_form_editable button.oe_highlight {
+	background-image: none;
+	background: #e3e3e3;
+	border: none;
+	box-shadow: none;
+}
+.openerp .oe_view_manager_current .oe_form_editable button.oe_highlight:hover {
+    background: #cccccc;
+    box-shadow: none;
+}
+
+.openerp button:hover, .openerp .oe_button:hover, .openerp input[type="submit"]:hover {
+	background: #cccccc;
+}
+
+/* Create, Save, Cancel, etc. buttons */
+.openerp button.oe_highlight {
+	background: #d9534f;
+	border: none;
+}
+
+.openerp button.oe_highlight:hover{
+	background: #c9302c;
+}
