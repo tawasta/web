@@ -3,7 +3,8 @@
     <data>
         <template id="web_ui_alternative_style" name="web_ui_alternative_style" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
-                <link rel="stylesheet" href="/web_ui_alternative/static/src/css/web_ui_alternative.css"/>            
+            	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css' />
+                <link rel="stylesheet" href="/web_ui_alternative/static/src/css/web_ui_alternative.css" />            
             </xpath>
         </template>
     </data>
