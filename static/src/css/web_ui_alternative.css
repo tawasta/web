@@ -97,7 +97,7 @@ html, body, .openerp{
 }
 
 /* TABLES */
-.openerp .oe_form_field_one2many .oe_list_content > tbody tr:nth-child(2n+1), .openerp .oe_form_field_many2many .oe_list_content > tbody tr:nth-child(2n+1) {
+.openerp .oe_form_field_one2many .oe_list_content > tbody tr:nth-child(2n), .openerp .oe_form_field_many2many .oe_list_content > tbody tr:nth-child(2n+1) {
     background-color: #f0eeee;
     background-image: linear-gradient(to bottom, #eeeeee, #efefef);
 }
