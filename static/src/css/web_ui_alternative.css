@@ -95,3 +95,13 @@ html, body, .openerp{
 .openerp button.oe_highlight:hover{
 	background: #c9302c;
 }
+
+/* TABLES */
+.openerp .oe_form_field_one2many .oe_list_content > tbody tr:nth-child(2n+1), .openerp .oe_form_field_many2many .oe_list_content > tbody tr:nth-child(2n+1) {
+    background-color: #f0eeee;
+    background-image: linear-gradient(to bottom, #eeeeee, #efefef);
+}
+
+.openerp .oe_list_content td, .openerp .oe_list_content th {
+    padding-bottom: 0.5em;	
+}
