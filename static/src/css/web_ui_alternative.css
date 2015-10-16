@@ -5,7 +5,8 @@ html, body, .openerp{
 
 /* NAVBAR */
 .navbar-inverse {
-    background: linear-gradient(to bottom, #000, #444, #000);
+    background: #444;
+    background: linear-gradient(to bottom, #000, #555);
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background: none
@@ -17,16 +18,18 @@ html, body, .openerp{
 
 /* LEFT NAVBAR */
 .openerp .oe_leftbar {
-	background: linear-gradient(to left, #f0eeee, #fefefe, #f0eeee);
+	background: #fefefe;
+	background: linear-gradient(to right, #f0eeee, #fefefe);
 	border-right: none;
+	border-shadow: none;
 }
 
 .openerp .nav-pills > li.active > a, .openerp a.list-group-item.active > a {
-    background: linear-gradient(to left, #7c7bad, #a1a1c4, #7c7bad);
+    background: linear-gradient(to right, #7c7bad, #a1a1c4);
 }
 
 .nav-pills > li > a:hover, .nav-pills > li > a:focus{
-	background: linear-gradient(to left, #d9d9d9, #f2f2f2, #d9d9d9);
+	background: linear-gradient(to right, #d9d9d9, #f2f2f2);
 	border-radius: 0;
 }
 
@@ -36,8 +39,10 @@ html, body, .openerp{
 
 /* TOP BAR */
 .openerp .oe_view_manager_current > .oe_view_manager_header {
-	background: linear-gradient(to bottom, #f0eeee, #fefefe, #f0eeee);
+    background: #fefefe;
+	background: linear-gradient(to left, #f0eeee, #fefefe);
 	border: none;
+	box-shadow: none;
 }
 
 /* VIEW MENU */
@@ -97,6 +102,12 @@ html, body, .openerp{
 }
 
 /* TABLES */
+.openerp .oe_list_content > thead {
+    background: linear-gradient(to left, #f0eeee, #fefefe);
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
 .openerp .oe_form_field_one2many .oe_list_content > tbody tr:nth-child(2n), .openerp .oe_form_field_many2many .oe_list_content > tbody tr:nth-child(2n+1) {
     background-color: #f0eeee;
     background-image: linear-gradient(to bottom, #eeeeee, #efefef);
