@@ -103,9 +103,16 @@ html, body, .openerp{
 
 /* TABLES */
 .openerp .oe_list_content > thead {
-    background: linear-gradient(to left, #f0eeee, #fefefe);
-    border-top: 2px solid #eee;
-    border-bottom: 2px solid #eee;
+    border: none;
+}
+
+.openerp .oe_list_content > thead tr {
+	background: linear-gradient(to left, #f0eeee, #fefefe);
+	background: #f0eeee;
+}
+
+.openerp .oe_list_content > thead th {
+    background: transparent;
 }
 
 .openerp .oe_form_field_one2many .oe_list_content > tbody tr:nth-child(2n), .openerp .oe_form_field_many2many .oe_list_content > tbody tr:nth-child(2n+1) {
