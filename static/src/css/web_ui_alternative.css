@@ -9,7 +9,7 @@ html, body, .openerp{
     background: linear-gradient(to bottom, #000, #555);
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    background: none
+    background: none;
 }
 
 .openerp .oe_secondary_menu_section {
@@ -95,10 +95,26 @@ html, body, .openerp{
 .openerp button.oe_highlight {
 	background: #d9534f;
 	border: none;
+	padding: 0.5em 1em;
 }
 
-.openerp button.oe_highlight:hover{
+.openerp button.oe_highlight:hover {
 	background: #c9302c;
+}
+
+/* Dropdown buttons */
+.openerp .oe_dropdown_toggle {
+	padding: 0.5em 1em;
+	margin-right: 0.5em;
+}
+
+.openerp .oe_dropdown_menu > li{
+	padding: 0;
+}
+
+.openerp .oe_dropdown_menu > li > a {
+	padding: 0.5em 1em;
+	text-align: center;
 }
 
 /* TABLES */
