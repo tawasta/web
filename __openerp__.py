@@ -1,24 +1,39 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#   Copyright (c) 2013- Vizucom Oy (http://www.vizucom.com)
+#    Author: 
+#    Copyright 2015 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
 #    published by the Free Software Foundation, either version 3 of the
 #    License, or (at your option) any later version.
 #
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#    GNU Affero General Public License for more details.
+#
 #    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    along with this program. If not, see http://www.gnu.org/licenses/agpl.html.
 #
 ##############################################################################
+
 {
-    'name': 'testing_message',
-    'category': 'Tools',
-    'version': '0.1',
-    'author': 'Vizucom Oy',
-    'website': 'http://www.vizucom.com',
-    'depends': [],
-    'description': "A constantly visible testing environment message",
-    'data' : ["views/testing_message.xml", ],
+    'name': 'Testing Message',
+    'summary': "A constantly visible message",
+    'version': '8.0.0.2.0',
+    'category': 'Web',
+    'website': 'http://www.tawasta.fi',
+    'author': 'Oy Tawasta Technologies Ltd.',
+    'license': 'AGPL-3',
+    'application': False,
+    'installable': True,
+    'depends': [
+        'web',
+    ],
+    'data': [
+        "views/testing_message.xml",
+    ],
+
 }
