@@ -92,10 +92,13 @@ html, body, .openerp{
 }
 
 /* Create, Save, Cancel, etc. buttons */
+.openerp .oe_form_button, .openerp button{
+    border: none;
+    padding: 0.5em 1em;
+}
+
 .openerp button.oe_highlight {
 	background: #d9534f;
-	border: none;
-	padding: 0.5em 1em;
 }
 
 .openerp button.oe_highlight:hover {
