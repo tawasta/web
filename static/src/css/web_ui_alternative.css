@@ -97,6 +97,10 @@ html, body, .openerp{
     padding: 0.5em 1em;
 }
 
+.openerp .oe_kanban_view .oe_kanban_action_button{
+	height: auto;
+}
+
 .openerp button.oe_highlight {
 	background: #d9534f;
 }
