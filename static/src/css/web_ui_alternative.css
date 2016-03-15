@@ -9,6 +9,10 @@ html, body, .openerp{
     min-width: 600px;
 }
 
+.modal-lg{
+    width: 70%;
+}
+
 /* NAVBAR */
 .navbar-inverse {
     background: #444;
