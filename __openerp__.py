@@ -21,7 +21,7 @@
 {
     'name': 'Web UI Alternative',
     'category': 'Web',
-    'version': '8.0.0.1.9',
+    'version': '8.0.0.1.10',
     'author': 'Oy Tawasta Technologies Ltd',
     'website': 'http://www.tawasta.fi',
     'depends': [

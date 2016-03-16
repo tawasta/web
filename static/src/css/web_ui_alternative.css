@@ -68,6 +68,12 @@ html, body, .openerp{
     border-bottom: none;
 }
 
+/* SEARCH */
+/* Advanced search */
+.openerp .oe_searchview_drawer .oe_searchview_advanced select {
+    max-width: 20%;
+}
+
 /* BUTTONS */
 /* All buttons */
 .openerp button {
