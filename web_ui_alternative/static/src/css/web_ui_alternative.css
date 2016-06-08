@@ -128,7 +128,7 @@ html, body, .openerp{
 
 /* Dropdown buttons */
 .openerp .oe_dropdown_toggle {
-	padding: 0.5em 1em;
+	padding: 0.8em 1.6em;
 	margin-right: 0.5em;
 }
 
