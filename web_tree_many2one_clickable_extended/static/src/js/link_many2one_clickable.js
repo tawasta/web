@@ -96,7 +96,7 @@ openerp.web_tree_many2one_clickable_extended = function(instance, local)
 
                 return _.str.sprintf('<a class="oe_form_uri" href="%s">%s</a>',
                     beginning[0],
-                    row_data[this.id].value[0]);
+                    row_data[this.id].value);
             }
             else {
                 return this._super(row_data, options);
