@@ -22,7 +22,7 @@
 //
 //############################################################################
 
-openerp.link_many2one_clickable = function(instance, local)
+openerp.web_tree_many2one_clickable_extended = function(instance, local)
 {
     instance.web.list.Column.include({
         /*
@@ -44,7 +44,7 @@ openerp.link_many2one_clickable = function(instance, local)
                 this.use_many2one_clickable = false;
                 (new instance.web.Model("ir.config_parameter"))
                     .query(["value"])
-                    .filter([['key', '=', 'link_many2one_clickable.default']])
+                    .filter([['key', '=', 'web_tree_many2one_clickable_extended.default']])
                     .first()
                     .then(function(param) {
                         if (param) {
@@ -88,9 +88,9 @@ openerp.link_many2one_clickable = function(instance, local)
 
     instance.web.list.columns.add(
             'field.many2one_clickable',
-            'instance.link_many2one_clickable.Many2OneClickable');
+            'instance.web_tree_many2one_clickable_extended.Many2OneClickable');
 
-    instance.link_many2one_clickable.Many2OneClickable = openerp.web.list.Column.extend({
+    instance.web_tree_many2one_clickable_extended.Many2OneClickable = openerp.web.list.Column.extend({
     });
 
     /* click action */

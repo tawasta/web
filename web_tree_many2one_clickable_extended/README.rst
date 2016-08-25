@@ -15,13 +15,21 @@ Install the module form Settings->Local Modules
 
 Configuration
 =============
-\-
+If you want to have all many2one fields clickable by default, you have to define in Configuration > Technical > Parameters > System parameters, a new parameter with name web_tree_many2one_clickable_extended.default and with value true.
 
 Usage
 =====
 You can get to partner-spesific projects from partner form by pressing projects-button.
 Projects have new menuitems for My procects/My tasks/Project Templates.
 Kanban views have been modified.
+
+For the widget option, you need to add widget="many2one_clickable" attribute in the XML field definition in the tree view.
+
+For example:
+
+<field name="partner_id" widget="many2one_clickable" />
+
+will open the linked partner in a form view.
 
 Known issues / Roadmap
 ======================
