@@ -30,6 +30,11 @@ openerp.web_tree_many2one_clickable_extended = function(instance, local)
         */
         init: function(id, tag, attrs) {
             this._super(id, tag, attrs);
+
+            if (this.name == 'name') {
+                this.use_name_clickable = true;
+            }
+
             if (this.widget == 'many2one_clickable') {
                 this.use_many2one_clickable = true;
             } else if (this.type == 'many2one') {
@@ -58,9 +63,7 @@ openerp.web_tree_many2one_clickable_extended = function(instance, local)
         },
 
         _format: function (row_data, options)
-        {   
-            
-            
+        {
             if (this.use_many2one_clickable) {
 
                 var url = window.location.href;
@@ -76,6 +79,24 @@ openerp.web_tree_many2one_clickable_extended = function(instance, local)
                     begining[0],
                     row_data[this.id].value[0],
                     _.escape(row_data[this.id].value[1] || options.value_if_empty));
+            }
+            else if (this.use_name_clickable) {
+
+                var url = window.location.href;
+                var beginning = url.split("#");
+                var url_attrs = beginning[1].split("&");
+
+                beginning[0] += "#id=";
+                beginning[0] += options.id;
+                beginning[0] += "&view_type=form&model=";
+                beginning[0] += options.model;
+                // TODO: this isn't very reliable reference
+                beginning[0] += "&";
+                beginning[0] += url_attrs[4];
+
+                return _.str.sprintf('<a class="oe_form_uri" href="%s">%s</a>',
+                    beginning[0],
+                    row_data[this.id].value[0]);
             }
             else {
                 return this._super(row_data, options);
