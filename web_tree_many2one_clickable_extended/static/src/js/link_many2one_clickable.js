@@ -31,13 +31,9 @@ openerp.web_tree_many2one_clickable_extended = function(instance, local)
         init: function(id, tag, attrs) {
             this._super(id, tag, attrs);
 
-            if (this.name == 'name') {
-                this.use_name_clickable = true;
-            }
-
             if (this.widget == 'many2one_clickable') {
                 this.use_many2one_clickable = true;
-            } else if (this.type == 'many2one') {
+            } else if (this.type == 'many2one' || this.name == 'name') {
                 this.get_options();
             }
         },
@@ -53,6 +49,7 @@ openerp.web_tree_many2one_clickable_extended = function(instance, local)
                     .first()
                     .then(function(param) {
                         if (param) {
+                            self.use_name_clickable = (param.value.toLowerCase() == 'true');
                             self.use_many2one_clickable = (param.value.toLowerCase() == 'true');
                         }
                         self.ir_option_clickable_loaded.resolve();

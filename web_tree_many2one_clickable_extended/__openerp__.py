@@ -24,7 +24,7 @@
 
 {
     "name": "Extension for clickable many2one fields for tree views",
-    "version": "8.0.1.1.1",
+    "version": "8.0.1.1.2",
     "author": "Therp BV, "
               "Serv. Tecnol. Avanzados - Pedro M. Baeza, "
               "Odoo Community Association (OCA)",
