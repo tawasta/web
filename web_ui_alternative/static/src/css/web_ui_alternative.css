@@ -5,12 +5,17 @@ html, body, .openerp{
 
 /* SHEETS */
 .openerp .oe_form_sheet_width {
-    max-width: 1200px;
+    max-width: 80%;
     min-width: 600px;
 }
 
 .modal-lg{
     width: 70%;
+}
+
+/* CHATTER */
+.openerp .oe_form div.oe_chatter{
+    max-width: 80%;
 }
 
 /* NAVBAR */
