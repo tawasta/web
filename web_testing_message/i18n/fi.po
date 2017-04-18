@@ -1,0 +1,27 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* testing_message
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-12 12:41+0000\n"
+"PO-Revision-Date: 2014-08-12 15:50+0200\n"
+"Last-Translator: Jarmo Kortetjärvi <jarmo@futurable.fi>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: testing_message
+#: view:False:0
+msgid "A TESTING ENVIRONMENT -"
+msgstr "TESTIYMPÄRISTÖ  -"
+
+#. module: testing_message
+#: view:False:0
+msgid "ALL CHANGES WILL BE DISCARDED"
+msgstr "MUUTOKSIA EI SÄILYTETÄ"
