@@ -3,6 +3,10 @@ html, body, .openerp{
 	font-family: "Ubuntu", "Open Sans", sans-serif;
 }
 
+pre {
+    white-space: pre-wrap;
+}
+
 /* SHEETS */
 .openerp .oe_form_sheet_width {
     max-width: 80%;
