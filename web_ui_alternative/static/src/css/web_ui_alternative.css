@@ -5,7 +5,7 @@ html, body, .openerp{
 
 pre {
     word-wrap: break-word;
-    word-break: break-word;
+    word-break: unset;
     white-space: pre-wrap;
 }
 
