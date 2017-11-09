@@ -1,9 +1,11 @@
 /* ALL ELEMENTS */
 html, body, .openerp{
-	font-family: "Ubuntu", "Open Sans", sans-serif;
+    font-family: "Ubuntu", "Open Sans", sans-serif;
 }
 
 pre {
+    word-wrap: break-word;
+    word-break: break-word;
     white-space: pre-wrap;
 }
 
@@ -38,10 +40,10 @@ pre {
 
 /* LEFT NAVBAR */
 .openerp .oe_leftbar {
-	background: #fefefe;
-	background: linear-gradient(to right, #f0eeee, #fefefe);
-	border-right: none;
-	border-shadow: none;
+    background: #fefefe;
+    background: linear-gradient(to right, #f0eeee, #fefefe);
+    border-right: none;
+    border-shadow: none;
 }
 
 .openerp .nav-pills > li.active > a, .openerp a.list-group-item.active > a {
@@ -49,8 +51,8 @@ pre {
 }
 
 .nav-pills > li > a:hover, .nav-pills > li > a:focus{
-	background: linear-gradient(to right, #d9d9d9, #f2f2f2);
-	border-radius: 0;
+    background: linear-gradient(to right, #d9d9d9, #f2f2f2);
+    border-radius: 0;
 }
 
 .openerp .oe_leftbar > div .oe_footer {
@@ -60,15 +62,15 @@ pre {
 /* TOP BAR */
 .openerp .oe_view_manager_current > .oe_view_manager_header {
     background: #fefefe;
-	background: linear-gradient(to left, #f0eeee, #fefefe);
-	border: none;
-	box-shadow: none;
+    background: linear-gradient(to left, #f0eeee, #fefefe);
+    border: none;
+    box-shadow: none;
 }
 
 /* VIEW MENU */
 #oe_main_menu_navbar li a, #oe_main_menu_navbar li button {
- 	font-weight: bold;
- 	outline: 0;
+    font-weight: bold;
+    outline: 0;
 }
 
 /* FORM HEADER */
@@ -99,18 +101,18 @@ pre {
 }
 
 .openerp a.button:link, .openerp a.button:visited, .openerp button, .openerp .oe_button, .openerp input[type="submit"] {
-	background-image: none;
-	background: #e3e3e3;
-	border: none;
-	box-shadow: none;
+    background-image: none;
+    background: #e3e3e3;
+    border: none;
+    box-shadow: none;
 }
 
 /* Send by Email, Print, etc. buttons */
 .openerp .oe_view_manager_current .oe_form_editable button.oe_highlight {
-	background-image: none;
-	background: #e3e3e3;
-	border: none;
-	box-shadow: none;
+    background-image: none;
+    background: #e3e3e3;
+    border: none;
+    box-shadow: none;
 }
 .openerp .oe_view_manager_current .oe_form_editable button.oe_highlight:hover {
     background: #cccccc;
@@ -118,7 +120,7 @@ pre {
 }
 
 .openerp button:hover, .openerp .oe_button:hover, .openerp input[type="submit"]:hover {
-	background: #cccccc;
+    background: #cccccc;
 }
 
 /* Create, Save, Cancel, etc. buttons */
@@ -128,30 +130,30 @@ pre {
 }
 
 .openerp .oe_kanban_view .oe_kanban_action_button{
-	height: auto;
+    height: auto;
 }
 
 .openerp button.oe_highlight {
-	background: #d9534f;
+    background: #d9534f;
 }
 
 .openerp button.oe_highlight:hover {
-	background: #c9302c;
+    background: #c9302c;
 }
 
 /* Dropdown buttons */
 .openerp .oe_dropdown_toggle {
-	padding: 0.8em 1.6em;
-	margin-right: 0.5em;
+    padding: 0.8em 1.6em;
+    margin-right: 0.5em;
 }
 
 .openerp .oe_dropdown_menu > li{
-	padding: 0;
+    padding: 0;
 }
 
 .openerp .oe_dropdown_menu > li > a {
-	padding: 0.5em 1em;
-	text-align: center;
+    padding: 0.5em 1em;
+    text-align: center;
 }
 
 /* TABLES */
@@ -160,8 +162,8 @@ pre {
 }
 
 .openerp .oe_list_content > thead tr {
-	background: linear-gradient(to left, #f0eeee, #fefefe);
-	background: #f0eeee;
+    background: linear-gradient(to left, #f0eeee, #fefefe);
+    background: #f0eeee;
 }
 
 .openerp .oe_list_content > thead th {
@@ -174,5 +176,5 @@ pre {
 }
 
 .openerp .oe_list_content td, .openerp .oe_list_content th {
-    padding-bottom: 0.5em;	
+    padding-bottom: 0.5em;  
 }
