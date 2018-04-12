@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution
-#    This module copyright
-#      (C) 2013 Therp BV (<http://therp.nl>).
-#      (c) 2015 Serv. Tecnol. Avanzados (http://www.serviciosbaeza.com)
-#               Pedro M. Baeza <pedro.baeza@serviciosbaeza.com>
+#    Author: Oy Tawasta OS Technologies Ltd.
+#    Copyright 2015 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -14,26 +11,33 @@
 #
 #    This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #    GNU Affero General Public License for more details.
 #
 #    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    along with this program. If not, see http://www.gnu.org/licenses/agpl.html
 #
 ##############################################################################
 
 {
-    "name": "Extension for clickable many2one fields for tree views",
-    "version": "8.0.1.1.2",
-    "author": "Therp BV, "
-              "Serv. Tecnol. Avanzados - Pedro M. Baeza, "
-              "Odoo Community Association (OCA)",
-    "category": "Dependency",
-    "depends": [
+    'name': 'Web UI Alternative',
+    'version': '8.0.0.1.16',
+    'category': 'Web',
+    'website': 'http://www.tawasta.fi',
+    'author': 'Oy Tawasta Technologies Ltd.',
+    'license': 'AGPL-3',
+    'application': False,
+    'installable': False,
+    'depends': [
         'web',
     ],
-    "data": [
-        'views/asset.xml',
+    'description': '''
+Web UI Alternative
+==================
+
+Alternative appearance for the web UI
+''',
+    'data': [
+        'view/web_ui_alternative.xml'
     ],
-    "installable": True,
 }
