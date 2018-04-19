@@ -23,7 +23,7 @@ Usage
 
 Known issues / Roadmap
 ======================
-- The message can't be modified
+- The message can not be modified
 
 Credits
 =======

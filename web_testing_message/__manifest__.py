@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Author: Jarmo Kortetjärvi
-#    Copyright 2015 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Author: Oy Tawasta OS Technologies Ltd.
+#    Copyright 2017 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -21,19 +21,19 @@
 
 {
     'name': 'Testing Message',
-    'summary': "A constantly visible message",
-    'version': '8.0.0.2.2',
+    'summary': 'A constantly visible message',
+    'version': '10.0.1.0.0',
     'category': 'Web',
     'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
-    'installable': False,
+    'installable': True,
     'depends': [
         'web',
     ],
     'data': [
-        "views/testing_message.xml",
+        'views/testing_message.xml',
     ],
 
 }
