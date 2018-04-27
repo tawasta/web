@@ -20,7 +20,7 @@
 ##############################################################################
 
 {
-    'name': '<label for="login" class="control-label">Email</label>',
+    'name': 'Login term to "Username"',
     'summary': 'Changes the login "email" to "username"',
     'version': '10.0.1.0.0',
     'category': 'Web',
