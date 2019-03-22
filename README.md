@@ -1,4 +1,6 @@
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Build Status](https://travis-ci.org/Tawasta/web.svg?branch=10.0)](https://travis-ci.org/Tawasta/web)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef9d84eee6a442a9b575c9e87a6ec27f)](https://www.codacy.com/app/Tawasta/web?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Tawasta/web&amp;utm_campaign=Badge_Grade)
 
 Odoo UI improvements and modifications
 ======================================
