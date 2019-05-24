@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2017 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Copyright 2017 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -22,13 +22,13 @@
 {
     'name': 'Login term to "Username"',
     'summary': 'Changes the login "email" to "username"',
-    'version': '10.0.1.0.0',
+    'version': '12.0.1.0.0',
     'category': 'Web',
-    'website': 'http://www.tawasta.fi',
+    'website': 'https://github.com/tawasta/web',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
-    'installable': True,
+    'installable': False,
     'depends': [
         'web',
     ],
