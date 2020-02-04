@@ -2,16 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-===============
-Testing Message
-===============
+======================
+SFS 2487 report layout
+======================
 
-A constantly visible testing message
-
-Installation
-============
-
-Install the module form Settings->Local Modules
+Alter report layout to follow SFS 2487 standard formatting
 
 Configuration
 =============
@@ -23,7 +18,7 @@ Usage
 
 Known issues / Roadmap
 ======================
-- The message can not be modified
+\-
 
 Credits
 =======
@@ -36,8 +31,8 @@ Contributors
 Maintainer
 ----------
 
-.. image:: http://tawasta.fi/templates/tawastrap/images/logo.png
+.. image:: https://tawasta.fi/templates/tawastrap/images/logo.png
    :alt: Oy Tawasta OS Technologies Ltd.
-   :target: http://tawasta.fi/
+   :target: https://tawasta.fi/
 
 This module is maintained by Oy Tawasta OS Technologies Ltd..
