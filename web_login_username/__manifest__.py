@@ -18,20 +18,15 @@
 ##############################################################################
 
 {
-    'name': 'Login term to "Username"',
-    'summary': 'Changes the login "email" to "username"',
-    'version': '12.0.1.0.0',
-    'category': 'Web',
-    'website': 'https://github.com/tawasta/web',
-    'author': 'Tawasta',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'depends': [
-        'web',
-    ],
-    'data': [
-        'views/web_login.xml',
-    ],
-
+    "name": 'Login term to "Username"',
+    "summary": 'Changes the login "email" to "username"',
+    "version": "12.0.1.0.0",
+    "category": "Web",
+    "website": "https://github.com/tawasta/web",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": ["web"],
+    "data": ["views/web_login.xml"],
 }

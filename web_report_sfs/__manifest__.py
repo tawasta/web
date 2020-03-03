@@ -19,23 +19,19 @@
 ##############################################################################
 
 {
-    'name': 'SFS 2487 report layout',
-    'summary': 'Alter report layout to follow SFS 2487 standard formatting',
-    'version': '12.0.1.0.0',
-    'category': 'Web',
-    'website': 'https://github.com/Tawasta/web',
-    'author': 'Tawasta',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'depends': [
-        'web',
+    "name": "SFS 2487 report layout",
+    "summary": "Alter report layout to follow SFS 2487 standard formatting",
+    "version": "12.0.1.0.0",
+    "category": "Web",
+    "website": "https://github.com/Tawasta/web",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": ["web"],
+    "data": [
+        "data/report_paperformat.xml",
+        "data/company_paperformat.xml",
+        "views/report_templates.xml",
     ],
-    'data': [
-        'data/report_paperformat.xml',
-        'data/company_paperformat.xml',
-
-        'views/report_templates.xml',
-    ],
-
 }
