@@ -19,19 +19,15 @@
 ##############################################################################
 
 {
-    'name': 'Hide message thread "New message" button',
-    'summary': 'Hide message thread "New message" button',
-    'version': '12.0.1.0.0',
-    'category': 'Web',
-    'website': 'https://github.com/tawasta/web',
-    'author': 'Tawasta',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'depends': [
-        'base',
-    ],
-    'data': [
-        'views/assets.xml',
-    ],
+    "name": 'Hide message thread "New message" button',
+    "summary": 'Hide message thread "New message" button',
+    "version": "12.0.1.0.0",
+    "category": "Web",
+    "website": "https://github.com/tawasta/web",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": ["base"],
+    "data": ["views/assets.xml"],
 }
