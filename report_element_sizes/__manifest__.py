@@ -34,9 +34,8 @@
         'python': [],
         'bin': [],
     },
-    'depends': ["purchase", "web"],
+    'depends': ["web"],
     'data': [
         "report/report_view.xml",
-        "report/purchase_order_report.xml"
     ],
 }
