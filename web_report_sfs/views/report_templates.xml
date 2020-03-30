@@ -7,7 +7,11 @@
             <div class="header">
                 <div class="row">
                     <div class="col-6" name="header-left-col">
-                        <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="max-height: 90px;" t-att-alt="company.name + ' logo'"/>
+                        <img
+                            t-if="company.logo"
+                            t-att-src="image_data_uri(company.logo)"
+                            style="max-height: 90px; max-width: 100%;"
+                            t-att-alt="company.name + ' logo'"/>
                     </div>
 
                     <div class="col-3" name="header-center-col">
@@ -26,7 +30,9 @@
                         <div class="text-right" name="header-page-number-div">
                             <span class="page"/> (<span class="topage"/>)
                         </div>
-                        <div class="text-right" name="header-confidential-div">Confidential</div>
+                        <t t-if="not unconfidental">
+                            <div class="text-right" name="header-confidential-div">Confidential</div>
+                        </t>
                     </div>
                 </div>
                 <div class="row zero_min_height" name="header-breaker">
