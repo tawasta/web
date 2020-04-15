@@ -30,7 +30,7 @@
                         <div class="text-right" name="header-page-number-div">
                             <span class="page"/> (<span class="topage"/>)
                         </div>
-                        <t t-if="not unconfidental">
+                        <t t-if="confidental">
                             <div class="text-right" name="header-confidential-div">Confidential</div>
                         </t>
                     </div>
