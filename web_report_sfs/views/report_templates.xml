@@ -22,7 +22,13 @@
                             <span t-esc="doc.name" />
                         </div>
                         <div name="report-date" class="row">
-                            <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d.%m.%Y')"/>
+                            <t t-if="header_time_value">
+                                <t t-esc="header_time_value">
+                                </t>
+                                <t t-elif="header_time_now">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d.%m.%Y')"/>
+                                </t>
+                            </t>
                         </div>
                     </div>
 
