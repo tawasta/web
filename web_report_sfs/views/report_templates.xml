@@ -23,7 +23,7 @@
                         </div>
                         <div name="report-date" class="row">
                             <t t-if="header_date_value">
-                                <span t-esc="header_time_value"/>
+                                <span t-esc="header_date_value"/>
                             </t>
                             <t t-elif="header_date_now">
                                 <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d.%m.%Y')"/>
