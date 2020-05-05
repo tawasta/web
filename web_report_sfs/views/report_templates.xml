@@ -25,9 +25,9 @@
                             <t t-if="header_time_value">
                                 <t t-esc="header_time_value">
                                 </t>
-                                <t t-elif="header_time_now">
-                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d.%m.%Y')"/>
-                                </t>
+                            </t>
+                            <t t-elif="header_time_now">
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d.%m.%Y')"/>
                             </t>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
         </t>
     </template>
 
-    <!-- SFS 2487 compliant footer -->
+<!-- SFS 2487 compliant footer -->
     <template id="footer">
         <t t-name="Footer">
             <!-- There should be at least 3 empty rows before footer -->
