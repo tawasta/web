@@ -16,7 +16,7 @@
 
                     <div class="col-3" name="header-center-col">
                         <div name="report-title" class="row">
-                            <strong><t t-raw="report_title or doc and doc._description or 'Report'" /></strong>
+                            <strong><t t-raw="report_title or doc and doc._description or ''" /></strong>
                         </div>
                         <div name="report-name" t-if="doc and 'name' in doc.fields_get() and doc.name" class="row">
                             <span t-esc="doc.name" />
