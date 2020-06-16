@@ -72,6 +72,7 @@
 
                     <div name="footer-right-col" class="col-4">
                         <t name="company-registry" t-if="company.company_registry" class="row"><span >Business ID:</span> <span t-field="company.company_registry" /><br/></t>
+                        <t name="company-vat" t-if="company.vat" class="row"><span >VAT</span> <span t-field="company.vat" /><br/></t>
                         <t name="company-office" t-if="company.city" class="row"><span>Registered office:</span> <span t-field="company.city" /><br/></t>
                     </div>
                 </div>
