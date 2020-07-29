@@ -10,7 +10,11 @@ Alter report layout to follow SFS 2487 standard formatting
 
 Configuration
 =============
-\-
+* To hide header set variable "hide_header" to true before calling
+  web.external_layout
+* To hide foooter set variable "hide_footer" to true before calling
+  web.external_layout
+
 
 Usage
 =====
