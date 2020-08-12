@@ -4,7 +4,7 @@
     <!-- SFS 2487 compliant header -->
     <template id="header">
         <t t-name="SFS header">
-            <div class="header">
+            <div class="header" t-if="not hide_header">
                 <div class="row">
                     <div class="col-6" name="header-left-col">
                         <img
@@ -54,7 +54,7 @@
     <template id="footer">
         <t t-name="Footer">
             <!-- There should be at least 3 empty rows before footer -->
-            <div class="footer" style="font-size: 12px; padding-top: 3em;">
+            <div class="footer" style="font-size: 12px; padding-top: 3em;" t-if="not hide_footer">
                 <div class="container row" style="border-top: 1px solid black;">
 
                     <div name="footer-left-col" class="col-4">
