@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <template id="assets_common_dropdown"
+    <template id="assets_backend"
               name="web_form_view_show_all_smart_buttons assets"
-              inherit_id="web.assets_common">
+              inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
             <script type="text/javascript" src="/web_form_view_show_all_smart_buttons/static/src/js/web.js"/>
         </xpath>

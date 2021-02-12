@@ -1,4 +1,4 @@
-odoo.define('web_form_view_show_all_smart_buttons', function (require) {
+odoo.define('web_form_view_show_all_smart_buttons.form_renderer', function (require) {
     'use strict';
 
     var FormRenderer = require('web.FormRenderer');
