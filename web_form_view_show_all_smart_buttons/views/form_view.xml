@@ -5,7 +5,7 @@
               name="web_form_view_show_all_smart_buttons assets"
               inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
-            <script type="text/javascript" src="/web_form_view_show_all_smart_buttons/static/src/js/web.js"/>
+            <script type="text/javascript" src="/web_form_view_show_all_smart_buttons/static/src/js/web.js?v=101"/>
         </xpath>
     </template>
 </odoo>
