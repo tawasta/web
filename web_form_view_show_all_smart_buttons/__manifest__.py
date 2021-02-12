@@ -21,7 +21,7 @@
 {
     "name": "Form view show all smart buttons",
     "summary": "Show all smart buttons on form view",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "category": "Web",
     "website": "https://github.com/Tawasta/web",
     "author": "Tawasta",
@@ -29,7 +29,5 @@
     "application": False,
     "installable": True,
     "depends": ["web"],
-    "data": [
-        "views/form_view.xml",
-    ],
+    "data": ["views/form_view.xml"],
 }
