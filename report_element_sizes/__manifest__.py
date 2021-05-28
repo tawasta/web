@@ -19,23 +19,19 @@
 ##############################################################################
 
 {
-    'name': """Account Invoice, Sale Order and Purchase Order report element size
-        modifications""",
-    'summary': """Account Invoice, Sale Order and Purchase Order report element size
-        modifications""",
-    'version': '12.0.1.0.0',
-    'category': 'Reporting',
-    'website': 'https://tawasta.fi',
-    'author': 'Tawasta',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
-    },
-    'depends': ["web"],
-    'data': [
+    "name": """Account Invoice, Sale Order and Purchase Order report element
+        size modifications""",
+    "summary": """Account Invoice, Sale Order and Purchase Order report
+        element size modifications""",
+    "version": "14.0.1.0.0",
+    "category": "Reporting",
+    "website": "https://gitlab.com/tawasta/odoo/web",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": ["web"],
+    "data": [
         "report/report_view.xml",
     ],
 }
