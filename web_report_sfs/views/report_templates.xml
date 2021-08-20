@@ -71,7 +71,6 @@
                     </div>
 
                     <div name="footer-right-col" class="col-4">
-
                         <t name="company-registry" t-if="company.company_registry" class="row">
                             <span >Business ID:</span> <span t-esc="company.company_registry" /><br/>
                         </t>
