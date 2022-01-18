@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="website.view_attachment_form_inherit_website"/>
         <field name="arch" type="xml">
             <field name="website_id" position="after">
-                <field name="link_url"/>
+                <field name="link_url" widget="url" attrs="{'invisible': [('link_url', '=', False)]}"/>
             </field>
         </field>
     </record>
