@@ -18,4 +18,5 @@ class ResConfigSettings(models.TransientModel):
         for action in actions:
             if 'tree' in action.view_mode:
                 action.limit = limit
+                action.default_limit = limit
         return res

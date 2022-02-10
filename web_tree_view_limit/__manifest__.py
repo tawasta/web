@@ -31,5 +31,6 @@
     "depends": ["account", "mrp", "purchase", "stock"],
     "data": [
         "views/res_config_settings.xml",
+        "views/ir_act_window.xml",
     ],
 }
