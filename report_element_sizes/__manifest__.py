@@ -19,11 +19,9 @@
 ##############################################################################
 
 {
-    "name": """Account Invoice, Sale Order and Purchase Order report element
-        size modifications""",
-    "summary": """Account Invoice, Sale Order and Purchase Order report
-        element size modifications""",
-    "version": "14.0.1.0.0",
+    "name": "Account Invoice, Sale Order and Purchase Order report element size modifications",
+    "summary": "Account Invoice, Sale Order and Purchase Order report element size modifications",
+    "version": "14.0.1.0.1",
     "category": "Reporting",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
@@ -31,7 +29,5 @@
     "application": False,
     "installable": True,
     "depends": ["web"],
-    "data": [
-        "report/report_view.xml",
-    ],
+    "data": ["report/report_view.xml"],
 }

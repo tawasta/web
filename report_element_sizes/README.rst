@@ -2,11 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-====================================================================
-Account Invoice, Sale Order and Purchase Order Report elements fixes
-====================================================================
+====================
+Report Element Sizes
+====================
 
-Spread div-elements evenly.
+Spread div-elements evenly. Fix wklhtmltopdf flexbox issue with informations element in reports.
 
 Configuration
 =============
@@ -14,7 +14,7 @@ Configuration
 
 Usage
 =====
-Install the module.
+\-
 
 Known issues / Roadmap
 ======================
@@ -27,6 +27,7 @@ Contributors
 ------------
 
 * Timo Kekäläinen <timo.kekalainen@tawasta.fi>
+* Miika Nissi <miika.nissi@tawasta.fi>
 
 Maintainer
 ----------
