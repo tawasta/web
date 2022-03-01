@@ -28,9 +28,11 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["account", "mrp", "purchase", "stock"],
+    "depends": ["account", "base_setup", "mrp", "purchase", "stock",
+        "queue_job"],
     "data": [
-        "views/res_config_settings.xml",
+        "data/ir_cron.xml",
         "views/ir_act_window.xml",
+        "views/res_config_settings.xml",
     ],
 }
