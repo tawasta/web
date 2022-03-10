@@ -27,15 +27,9 @@ odoo.define('web_tree_many2one_clickable_specific.many2one_clickable_specific', 
                 this.$el.removeClass("o_form_uri");
                 this.$el = $("<span/>", {
                     html: this.$el.html(),
-                    class: this.$el.attr("class") + " o_field_text",
+                    class: this.$el.attr("class") + " o_field_text" + "many2one_clickable",
                     name: this.$el.attr("name"),
-                });
-
-                var $a = $('<a/>', {
-                    href: '#',
-                    class: 'o_form_uri btn btn-sm btn-secondary' +
-                           ' fa fa-angle-double-right many2one_clickable',
-                    tabindex: '-1',
+                    style: "color: #7C7BAD;",
                 }).on('click', function (ev) {
                     ev.preventDefault();
                     ev.stopPropagation();
@@ -48,7 +42,6 @@ odoo.define('web_tree_many2one_clickable_specific.many2one_clickable_specific', 
                         return self.do_action(action);
                     });
                 });
-                this.$el.append($a);
             }
         },
 
