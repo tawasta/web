@@ -15,7 +15,6 @@ Configuration
 * To hide foooter set variable "hide_footer" to true before calling
   web.external_layout
 
-
 Usage
 =====
 \-
@@ -31,6 +30,7 @@ Contributors
 ------------
 
 * Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
+* Miika Nissi <miika.nissi@tawasta.fi>
 
 Maintainer
 ----------

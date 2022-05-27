@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <!-- SFS 2487 compliant header -->
     <template id="header">
         <t t-name="SFS header">
@@ -14,7 +13,6 @@
                             t-att-alt="company.name + ' logo'"
                         />
                     </div>
-
                     <div class="col-3" name="header-center-col">
                         <div name="report-title" class="row">
                             <strong><t
@@ -39,7 +37,6 @@
                             </t>
                         </div>
                     </div>
-
                     <div class="col-3" name="header-right-col">
                         <div class="text-right" name="header-page-number-div">
                             <span class="page" /> (<span class="topage" />)
@@ -57,12 +54,10 @@
 
                     </div>
                 </div>
-
             </div>
         </t>
     </template>
-
-<!-- SFS 2487 compliant footer -->
+    <!-- SFS 2487 compliant footer -->
     <template id="footer">
         <t t-name="Footer">
             <!-- There should be at least 3 empty rows before footer -->
@@ -72,7 +67,6 @@
                 t-if="not hide_footer"
             >
                 <div class="container row" style="border-top: 1px solid black;">
-
                     <div name="footer-left-col" class="col-4">
                         <t name="company-name" t-if="company.name"><span
                                 t-field="company.name"
@@ -92,7 +86,6 @@
                                 style="text-transform: uppercase;"
                             /></t>
                     </div>
-
                     <div name="footer-center-col" class="col-4">
                         <t name="company-phone" t-if="company.phone"><span
                             >Phone:</span> <span t-field="company.phone" /><br /></t>
@@ -102,7 +95,6 @@
                             >Website:</span> <span t-field="company.website" /><br
                             /></t>
                     </div>
-
                     <div name="footer-right-col" class="col-4">
                         <t
                             name="company-registry"
@@ -127,7 +119,6 @@
             </div>
         </t>
     </template>
-
     <!-- Override header and footer for standard layout -->
     <template id="external_layout_standard" inherit_id="web.external_layout_standard">
         <xpath
@@ -144,7 +135,6 @@
             <t t-call="web_report_sfs.footer" />
         </xpath>
     </template>
-
     <!-- Override header and footer for clean layout -->
     <template id="external_layout_clean" inherit_id="web.external_layout_clean">
         <xpath
@@ -161,7 +151,6 @@
             <t t-call="web_report_sfs.footer" />
         </xpath>
     </template>
-
     <!-- Override header and footer for boxed layout -->
     <template id="external_layout_boxed" inherit_id="web.external_layout_boxed">
         <xpath
@@ -178,7 +167,6 @@
             <t t-call="web_report_sfs.footer" />
         </xpath>
     </template>
-
     <!-- Override header and footer for background layout -->
     <template
         id="external_layout_background"
@@ -198,5 +186,4 @@
             <t t-call="web_report_sfs.footer" />
         </xpath>
     </template>
-
 </odoo>
