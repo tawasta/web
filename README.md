@@ -1,25 +1,21 @@
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![Build Status](https://travis-ci.org/Tawasta/web.svg?branch=10.0)](https://travis-ci.org/Tawasta/web)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef9d84eee6a442a9b575c9e87a6ec27f)](https://www.codacy.com/app/Tawasta/web?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Tawasta/web&amp;utm_campaign=Badge_Grade)
+[![Pipeline Status](https://gitlab.com/tawasta/odoo/web/badges/14.0-dev/pipeline.svg)](https://gitlab.com/tawasta/odoo/web/-/pipelines/)
 
-Odoo UI improvements and modifications
-======================================
+Web
+===
+Odoo Web Addons.
 
 [//]: # (addons)
 
 Available addons
 ----------------
-addon | version | summary
---- | --- | ---
-[web_login_username](web_login_username/) | 10.0.1.0.0 | Changes the login "email" to "username"
-[web_message_thread_hidden_send](web_message_thread_hidden_send/) | 10.0.1.0.0 | Hide message thread "New message" button
-[web_testing_message](web_testing_message/) | 10.0.1.0.0 | A constantly visible message
-
-
-Unported addons
----------------
-addon | version | summary
---- | --- | ---
-[web_ui_alternative](web_ui_alternative/) | 8.0.0.1.16 (unported) | Web UI Alternative
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[report_element_sizes](report_element_sizes/) | 14.0.1.0.1 |  | Global Report element size modifications
+[web_content_group_permissions](web_content_group_permissions/) | 14.0.1.0.0 |  | Add group viewing permissions for web content (ir.attachment)
+[web_content_link_url](web_content_link_url/) | 14.0.1.0.0 |  | Web Content Link URL to share
+[web_editor_always_display_code_view](web_editor_always_display_code_view/) | 14.0.1.0.0 |  | Always display code view in web_editor without debug mode
+[web_report_sfs](web_report_sfs/) | 14.0.1.1.0 |  | Alter report layout to follow SFS 2487 standard formatting
+[web_report_sfs_footer_bank_info](web_report_sfs_footer_bank_info/) | 14.0.1.0.0 |  | SFS 2487 report - Bank information in the footer
 
 [//]: # (end addons)
