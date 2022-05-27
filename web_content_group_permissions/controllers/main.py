@@ -21,15 +21,16 @@
 # 1. Standard library imports:
 import logging
 
-# 2. Known third party imports:
-
 # 3. Odoo imports (openerp):
-from odoo import http, _
-from odoo.http import request
+from odoo import _, http
 from odoo.exceptions import AccessDenied
+from odoo.http import request
 
 # 4. Imports from Odoo modules:
 from odoo.addons.web.controllers.main import Binary
+
+# 2. Known third party imports:
+
 
 # 5. Local imports in the relative form:
 
@@ -39,6 +40,8 @@ _logger = logging.getLogger(__name__)
 
 
 class BinaryGroupPermissions(Binary):
+    # disable pylint error as id definition is needed in inheritance
+    # pylint: disable=W0622
     @http.route(
         [
             "/web/content",
