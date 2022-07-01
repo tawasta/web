@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2019 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2021- Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,18 +19,15 @@
 ##############################################################################
 
 {
-    "name": "Change General Tree-view limit",
-    "summary": "Change General Tree-view limit from settings",
+    "name": "Web Report SFS Footer EORI",
+    "summary": "Adds EORI number to report footer",
     "version": "14.0.1.0.0",
-    "category": "Web",
+    "category": "Reporting",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["account", "base_setup", "mrp", "purchase", "stock", "queue_job"],
-    "data": [
-        "data/ir_cron.xml",
-        "views/res_config_settings.xml",
-    ],
+    "depends": ["web_report_sfs", "res_partner_eori"],
+    "data": ["report/report_templates.xml"],
 }

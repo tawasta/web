@@ -29,8 +29,5 @@
     "application": False,
     "installable": True,
     "depends": ["web_report_sfs"],
-    "data": [
-        "views/res_config_settings.xml",
-        "report/report_template.xml"
-    ],
+    "data": ["views/res_config_settings.xml", "report/report_template.xml"],
 }
