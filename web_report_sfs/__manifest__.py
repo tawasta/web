@@ -28,7 +28,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["web"],
+    "depends": ["base", "web"],
     "data": [
         "data/report_paperformat.xml",
         "data/company_paperformat.xml",
