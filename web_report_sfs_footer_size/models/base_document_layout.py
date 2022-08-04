@@ -1,7 +1,7 @@
 from odoo import fields, models
 
 
-class BaseDocumentLayout(models.Model):
+class BaseDocumentLayout(models.TransientModel):
 
     _inherit = "base.document.layout"
 
