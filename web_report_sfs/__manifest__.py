@@ -33,5 +33,6 @@
         "data/report_paperformat.xml",
         "data/company_paperformat.xml",
         "views/report_templates.xml",
+        "views/res_config_settings.xml",
     ],
 }

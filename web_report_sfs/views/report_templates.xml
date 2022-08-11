@@ -127,6 +127,11 @@
         >
             <t t-call="web_report_sfs.header" />
         </xpath>
+        <div class="pt-5" position="attributes">
+            <attribute
+                name="t-att-class"
+            >'pt-{}'.format(company.web_address_size)</attribute>
+        </div>
 
         <xpath
             expr="//div[@t-attf-class='footer o_standard_footer o_company_#{company.id}_layout']"
