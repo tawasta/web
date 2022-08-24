@@ -21,7 +21,7 @@
 {
     "name": "SFS 2487 report layout",
     "summary": "Alter report layout to follow SFS 2487 standard formatting",
-    "version": "14.0.1.1.0",
+    "version": "14.0.1.1.1",
     "category": "Web",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
