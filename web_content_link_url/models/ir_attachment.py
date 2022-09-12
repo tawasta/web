@@ -19,13 +19,13 @@
 ##############################################################################
 
 # 1. Standard library imports:
+import uuid
+
 from werkzeug import urls
 
+# 2. Known third party imports:
 # 3. Odoo imports (openerp):
 from odoo import fields, models
-
-# 2. Known third party imports:
-
 
 # 4. Imports from Odoo modules:
 
@@ -39,7 +39,7 @@ class IrAttachment(models.Model):
     _inherit = "ir.attachment"
 
     # 2. Fields declaration
-    link_url = fields.Char("Link URL", readonly=1, compute="_compute_link_url")
+    link_url = fields.Char("Public Link URL", readonly=1, compute="_compute_link_url")
 
     # 3. Default methods
 
@@ -47,9 +47,16 @@ class IrAttachment(models.Model):
     def _compute_link_url(self):
         base_url = self.env["ir.config_parameter"].sudo().get_param("web.base.url")
         for attachment in self:
-            attachment.link_url = urls.url_join(
-                base_url, attachment.local_url.replace("image", "content")
+            link_url = urls.url_join(
+                base_url,
+                attachment.local_url.replace("image", "content"),
             )
+            if not attachment.public:
+                access_token = attachment.access_token
+                if not access_token:
+                    attachment.sudo().write({"access_token": str(uuid.uuid4())})
+                link_url += "&access_token=%s" % attachment.access_token
+            attachment.link_url = link_url
 
     # 5. Constraints and onchanges
 

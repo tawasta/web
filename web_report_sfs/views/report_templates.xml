@@ -10,7 +10,7 @@
                             t-if="company.logo"
                             t-att-src="image_data_uri(company.logo)"
                             style="max-height: 90px; max-width: 100%;"
-                            t-att-alt="company.name + ' logo'"
+                            t-att-alt="company.name or '' + ' logo'"
                         />
                     </div>
                     <div class="col-3" name="header-center-col">
