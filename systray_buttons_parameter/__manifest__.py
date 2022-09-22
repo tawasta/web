@@ -1,7 +1,7 @@
 ##############################################################################
 #
-#    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2022 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Author: Tawasta
+#    Copyright 2020 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -17,17 +17,21 @@
 #    along with this program. If not, see http://www.gnu.org/licenses/agpl.html
 #
 ##############################################################################
-
 {
-    "name": "Change SFS report footer size from settings",
-    "summary": "Report's footer upper padding can be changed from settings",
-    "version": "14.0.1.0.1",
-    "category": "Web",
+    "name": "Systray buttons parameter",
+    "summary": "Systray buttons parameter",
+    "version": "14.0.1.0.0",
+    "category": "Website",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["web_report_sfs"],
-    "data": ["views/res_config_settings.xml", "report/report_template.xml"],
+    "external_dependencies": {"python": [], "bin": []},
+    "depends": ["base"],
+    "data": ["security/ir.model.access.csv", "views/assets.xml"],
+    "qweb": [
+        "static/src/xml/systray_template.xml",
+    ],
+    "demo": [],
 }

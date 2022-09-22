@@ -9,4 +9,5 @@ class ResConfigSettings(models.TransientModel):
         string="Web footer upper padding",
         related="company_id.web_footer_size",
         readonly=False,
+        store=True,
     )
