@@ -21,7 +21,7 @@
 {
     "name": "Change SFS report footer size from settings",
     "summary": "Report's footer upper padding can be changed from settings",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Web",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",

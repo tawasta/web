@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <templates>
     <t t-name="systray.button">
         <li class="o_mail_navbar_item">
             <a class="nav-item" href="#" t-att-title="widget.title">
-                <i t-attf-class="fa #{widget.img}"/>
+                <i t-attf-class="fa #{widget.img}" />
             </a>
         </li>
     </t>

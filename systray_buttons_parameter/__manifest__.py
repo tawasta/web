@@ -30,6 +30,8 @@
     "external_dependencies": {"python": [], "bin": []},
     "depends": ["base"],
     "data": ["security/ir.model.access.csv", "views/assets.xml"],
-    'qweb': ["static/src/xml/systray_template.xml",],
+    "qweb": [
+        "static/src/xml/systray_template.xml",
+    ],
     "demo": [],
 }
