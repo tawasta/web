@@ -20,6 +20,7 @@ addon | version | maintainers | summary
 [web_report_sfs_footer_bank_info](web_report_sfs_footer_bank_info/) | 14.0.1.0.0 |  | SFS 2487 report - Bank information in the footer
 [web_report_sfs_footer_eori](web_report_sfs_footer_eori/) | 14.0.1.0.0 |  | Adds EORI number to report footer
 [web_report_sfs_footer_size](web_report_sfs_footer_size/) | 14.0.1.0.1 |  | Report's footer upper padding can be changed from settings
+[web_report_sfs_header_line](web_report_sfs_header_line/) | 14.0.0.1.0 |  | Web Report SFS - Header line
 [web_tree_view_limit](web_tree_view_limit/) | 14.0.1.0.0 |  | Change General Tree-view limit from settings
 
 [//]: # (end addons)
