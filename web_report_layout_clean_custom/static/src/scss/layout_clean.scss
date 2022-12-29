@@ -1,0 +1,9 @@
+.o_report_layout_clean {
+    table {
+        thead {
+            tr th:first-child {
+                width: inherit !important;
+            }
+        }
+    }
+}
