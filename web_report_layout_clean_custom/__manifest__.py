@@ -22,7 +22,7 @@
     "version": "14.0.1.0.0",
     "category": "Reporting",
     "summary": "Custom css rules for clean report layout",
-    "website": "https://gitlab.com/tawasta/odoo",
+    "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
