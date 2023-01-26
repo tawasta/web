@@ -5,7 +5,7 @@
 ==============================
 Web Report Layout Clean Custom
 ==============================
-* Custom css rules for clean report layout 
+* Custom css rules for clean report layout - Mainly used by Exact
 
 Configuration
 =============
