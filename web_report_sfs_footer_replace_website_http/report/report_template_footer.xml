@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="footer" inherit_id="web_report_sfs.footer">
+        <xpath expr="//span[@t-field='company.website']" position="attributes">
+            <attribute name='t-field' />
+            <attribute name='t-esc'>company.website.replace('http://','')</attribute>
+        </xpath>
+    </template>
+</odoo>
