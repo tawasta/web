@@ -24,7 +24,7 @@
                             t-if="doc and 'name' in doc.fields_get() and doc.name"
                             class="row"
                         >
-                            <span t-esc="doc.name" />
+                            <span t-esc="report_name or doc.name" />
                         </div>
                         <div name="report-date" class="row">
                             <t t-if="header_date_value">
