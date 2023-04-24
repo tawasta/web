@@ -19,7 +19,7 @@ addon | version | maintainers | summary
 [web_editor_always_display_code_view](web_editor_always_display_code_view/) | 14.0.1.0.0 |  | Always display code view in web_editor without debug mode
 [web_form_view_show_all_smart_buttons](web_form_view_show_all_smart_buttons/) | 14.0.1.0.0 |  | Show all smart buttons on form view
 [web_report_layout_clean_custom](web_report_layout_clean_custom/) | 14.0.1.0.1 |  | Custom css rules for clean report layout
-[web_report_sfs](web_report_sfs/) | 14.0.1.1.1 |  | Alter report layout to follow SFS 2487 standard formatting
+[web_report_sfs](web_report_sfs/) | 14.0.1.1.2 |  | Alter report layout to follow SFS 2487 standard formatting
 [web_report_sfs_footer_bank_info](web_report_sfs_footer_bank_info/) | 14.0.1.0.0 |  | SFS 2487 report - Bank information in the footer
 [web_report_sfs_footer_country](web_report_sfs_footer_country/) | 14.0.1.0.0 |  | SFS 2487 report - Country information in the footer
 [web_report_sfs_footer_eori](web_report_sfs_footer_eori/) | 14.0.1.0.0 |  | Adds EORI number to report footer
