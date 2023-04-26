@@ -23,7 +23,7 @@
     "summary": "Website Tree Dropdown Toggle",
     "version": "14.0.1.0.0",
     "category": "website",
-    "website": "https://gitlab.com/tawasta/odoo/website",
+    "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,

@@ -27,5 +27,6 @@ addon | version | maintainers | summary
 [web_report_sfs_footer_size](web_report_sfs_footer_size/) | 14.0.1.0.1 |  | Report's footer upper padding can be changed from settings
 [web_report_sfs_header_line](web_report_sfs_header_line/) | 14.0.0.1.0 |  | Web Report SFS - Header line
 [web_tree_view_limit](web_tree_view_limit/) | 14.0.1.0.0 |  | Change General Tree-view limit from settings
+[website_tree_dropdown_toggle](website_tree_dropdown_toggle/) | 14.0.1.0.0 |  | Website Tree Dropdown Toggle
 
 [//]: # (end addons)
