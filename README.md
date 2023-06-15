@@ -26,6 +26,7 @@ addon | version | maintainers | summary
 [web_report_sfs_footer_replace_website_http](web_report_sfs_footer_replace_website_http/) | 14.0.1.0.0 |  | Replace http-string in the footer
 [web_report_sfs_footer_size](web_report_sfs_footer_size/) | 14.0.1.0.1 |  | Report's footer upper padding can be changed from settings
 [web_report_sfs_header_line](web_report_sfs_header_line/) | 14.0.0.1.0 |  | Web Report SFS - Header line
+[web_report_sfs_hide_business_id](web_report_sfs_hide_business_id/) | 14.0.1.0.0 |  | Hide Business ID from SFS footer
 [web_tree_view_limit](web_tree_view_limit/) | 14.0.1.0.0 |  | Change General Tree-view limit from settings
 [website_tree_dropdown_toggle](website_tree_dropdown_toggle/) | 14.0.1.0.0 |  | Website Tree Dropdown Toggle
 
