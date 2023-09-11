@@ -21,7 +21,7 @@
 {
     "name": "Arial font option for PDF prints",
     "summary": "Arial font option for PDF prints",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.2",
     "category": "Web",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",

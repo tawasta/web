@@ -5,7 +5,7 @@
             <link
                 rel="stylesheet"
                 type="text/scss"
-                href="/web_arial_font/static/src/scss/fonts.scss"
+                href="/web_arial_font/static/src/scss/font.scss"
             />
         </xpath>
     </template>
