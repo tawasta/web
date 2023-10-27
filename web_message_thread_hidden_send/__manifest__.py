@@ -23,7 +23,7 @@
     "summary": 'Hide message thread "New message" button',
     "version": "14.0.1.0.0",
     "category": "Web",
-    "website": "https://github.com/tawasta/web",
+    "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,

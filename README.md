@@ -18,6 +18,7 @@ addon | version | maintainers | summary
 [web_content_link_url](web_content_link_url/) | 14.0.1.0.1 |  | Web Content Link URL to share
 [web_editor_always_display_code_view](web_editor_always_display_code_view/) | 14.0.1.0.0 |  | Always display code view in web_editor without debug mode
 [web_form_view_show_all_smart_buttons](web_form_view_show_all_smart_buttons/) | 14.0.1.0.0 |  | Show all smart buttons on form view
+[web_message_thread_hidden_send](web_message_thread_hidden_send/) | 14.0.1.0.0 |  | Hide message thread "New message" button
 [web_report_layout_clean_custom](web_report_layout_clean_custom/) | 14.0.1.0.1 |  | Custom css rules for clean report layout
 [web_report_sfs](web_report_sfs/) | 14.0.1.1.2 |  | Alter report layout to follow SFS 2487 standard formatting
 [web_report_sfs_footer_bank_info](web_report_sfs_footer_bank_info/) | 14.0.1.0.0 |  | SFS 2487 report - Bank information in the footer
