@@ -140,8 +140,8 @@
             <t t-call="web_report_sfs.footer" />
         </xpath>
     </template>
-    <!-- Override header and footer for clean layout -->
-    <template id="external_layout_clean" inherit_id="web.external_layout_clean">
+    <!-- Override header and footer for bold layout -->
+    <template id="external_layout_bold" inherit_id="web.external_layout_bold">
         <xpath
             expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
             position="replace"
@@ -172,10 +172,10 @@
             <t t-call="web_report_sfs.footer" />
         </xpath>
     </template>
-    <!-- Override header and footer for background layout -->
+    <!-- Override header and footer for striped layout -->
     <template
-        id="external_layout_background"
-        inherit_id="web.external_layout_background"
+        id="external_layout_striped"
+        inherit_id="web.external_layout_striped"
     >
         <xpath
             expr="//div[@t-attf-class='o_company_#{company.id}_layout header']"

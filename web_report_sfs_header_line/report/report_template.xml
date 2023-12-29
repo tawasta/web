@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<odoo>
-    <template id="header" inherit_id="web_report_sfs.header">
-        <xpath expr="//div[@class='header']//div[@class='row']" position="attributes">
-            <attribute name="style">border-bottom: 10px solid #facb00;</attribute>
-        </xpath>
-    </template>
-</odoo>

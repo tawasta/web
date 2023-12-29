@@ -1,7 +1,0 @@
-/* Fix for wkhtmltopdf rendering of flex box
-More information on flex box issue: https://github.com/wkhtmltopdf/wkhtmltopdf/issues/1522 */
-#informations.row > div {
-    display: inline-block !important;
-    max-width: 24% !important;
-    min-width: 200px !important;
-}
