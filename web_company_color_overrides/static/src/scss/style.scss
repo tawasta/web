@@ -1,0 +1,8 @@
+/* force badges' link colors to whice instead of company color */
+.o_field_many2manytags {
+    > .badge {
+        > a {
+            color: #fff !important;
+        }
+    }
+}
