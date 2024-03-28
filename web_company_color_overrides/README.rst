@@ -7,9 +7,13 @@ Web Company Color: Style overrides
 ==================================
 
 * When using OCA's web_company_color module and setting the link colors, 
-  that affects also the link colors inside many2many tag widget, 
-  making them hard to read against a dark tag background. This module simply overrides 
-  links inside m2m widget's badges back to being colored white.
+  that affects also the link colors in certain places where they become 
+  hard to read against a dark background
+* This module overrides links inside the following places back to being colored white:
+
+  * many2many widget: badges
+  * top search bar's filter list: hovered active filter
+
 * If you're not using web_company_color, there is no need to install this module
 
 Configuration
@@ -18,8 +22,7 @@ Configuration
 
 Usage
 =====
-* Open a contact form and set some tags. The tags' text color is now white instead
-  of the company link color.
+\-
 
 Known issues / Roadmap
 ======================

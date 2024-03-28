@@ -20,8 +20,8 @@
 
 {
     "name": "Web Company Color: Style overrides",
-    "summary": "Override m2m tag widget's link colors back to white",
-    "version": "14.0.1.0.0",
+    "summary": "Overrides for making certain items more readable",
+    "version": "14.0.1.0.1",
     "category": "Web",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
