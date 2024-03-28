@@ -1,8 +1,20 @@
-/* force badges' link colors to whice instead of company color */
+/* force badges' link colors to white instead of company color */
 .o_field_many2manytags {
     > .badge {
         > a {
             color: #fff !important;
+        }
+    }
+}
+
+/* force top bar search filter list's active link color
+to white instead of company color */
+.o_cp_top {
+    .o_searchview_autocomplete {
+        > .o_selection_focus {
+            > a {
+                color: #fff !important;
+            }
         }
     }
 }
