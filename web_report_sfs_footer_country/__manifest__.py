@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2020 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2023 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,20 +19,15 @@
 ##############################################################################
 
 {
-    "name": "SFS 2487 report layout",
-    "summary": "Alter report layout to follow SFS 2487 standard formatting",
-    "version": "17.0.1.0.2",
+    "name": "SFS 2487 report - Country information in the footer",
+    "summary": "SFS 2487 report - Country information in the footer",
+    "version": "17.0.1.0.0",
     "category": "Web",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["base", "web"],
-    "data": [
-        "data/report_paperformat.xml",
-        "data/company_paperformat.xml",
-        "views/report_templates.xml",
-        "views/res_config_settings.xml",
-    ],
+    "depends": ["web_report_sfs"],
+    "data": ["report/report_template_footer.xml"],
 }
