@@ -21,13 +21,16 @@
 {
     "name": "Report Element Sizes",
     "summary": "Global Report element size modifications",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Reporting",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
-    "installable": True,
+    # Timo Kekäläinen: Marked as installable because it breaks prints. This
+    # would be a good module, but it does not work in the 17 version of Odoo.
+    # Fix it if you can.
+    "installable": False,
     "depends": ["web"],
     "data": [],
     "assets": {
