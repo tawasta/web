@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <tr
+        t-name="web_form_view_show_all_smart_buttons.ButtonBox"
+        t-inherit="web.Form.ButtonBox"
+        t-inherit-mode="extension"
+    >
+        <xpath expr="//t[@t-foreach='visibleButtons']" position="after">
+            <t
+                t-slot="{{ button_value }}"
+                t-foreach="additionalButtons"
+                t-as="button"
+                t-key="button_value"
+            />
+        </xpath>
+
+        <xpath expr="//t[@t-if='additionalButtons.length']" position="attributes">
+            <attribute name="t-if">1 == 0</attribute>
+        </xpath>
+
+        <xpath
+            expr='//div[@class="o-form-buttonbox position-relative d-flex w-md-auto"]'
+            position="attributes"
+        >
+            <attribute
+                name="class"
+            >o-form-buttonbox position-relative w-md-auto</attribute>
+        </xpath>
+
+        <xpath
+            expr='//Dropdown[@togglerClass="&apos;o_button_more btn btn-outline-secondary d-flex justify-content-center align-items-center&apos;"]'
+            position="attributes"
+        >
+            <attribute
+                name="togglerClass"
+            >'o_button_more btn btn-outline-secondary justify-content-center align-items-center'</attribute>
+        </xpath>
+    </tr>
+</templates>

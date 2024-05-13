@@ -19,26 +19,22 @@
 ##############################################################################
 
 {
-    "name": "Report Element Sizes",
-    "summary": "Global Report element size modifications",
-    "version": "17.0.1.0.1",
-    "category": "Reporting",
+    "name": "Form view show all smart buttons",
+    "summary": "Show all smart buttons on form view",
+    "version": "17.0.1.1.0",
+    "category": "Web",
     "website": "https://gitlab.com/tawasta/odoo/web",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
-    # Timo Kekäläinen: Marked as installable because it breaks prints. This
-    # would be a good module, but it does not work in the 17 version of Odoo.
-    # Fix it if you can.
-    "installable": False,
+    "installable": True,
     "depends": ["web"],
     "data": [],
     "assets": {
-        "web.report_assets_common": [
-            "report_element_sizes/static/src/less/custom.scss",
-        ],
-        "web.report_assets_pdf": [
-            "report_element_sizes/static/src/scss/style.scss",
-        ],
+        "web.assets_backend": [
+            "web_form_view_show_all_smart_buttons/static/src/views/" "buttonbox.esm.js",
+            "web_form_view_show_all_smart_buttons/static/src/views/" "button_box.scss",
+            "web_form_view_show_all_smart_buttons/static/src/views/" "button_box.xml",
+        ]
     },
 }
