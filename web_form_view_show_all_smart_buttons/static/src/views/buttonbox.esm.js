@@ -5,6 +5,7 @@ import {patch} from "@web/core/utils/patch";
 
 patch(ButtonBox.prototype, {
     setup() {
+        super.setup(...arguments);
         this.getMaxButtons = () => 100;
     },
 });
