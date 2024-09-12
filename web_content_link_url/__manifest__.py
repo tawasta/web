@@ -29,7 +29,5 @@
     "application": False,
     "installable": True,
     "depends": ["website"],
-    "data": [
-        "views/ir_attachment_views.xml"
-    ],
+    "data": ["views/ir_attachment_views.xml"],
 }

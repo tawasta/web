@@ -42,20 +42,38 @@ _logger = logging.getLogger(__name__)
 class BinaryGroupPermissions(Binary):
     # disable pylint error as id definition is needed in inheritance
     # pylint: disable=W0622
-    @http.route(['/web/content',
-        '/web/content/<string:xmlid>',
-        '/web/content/<string:xmlid>/<string:filename>',
-        '/web/content/<int:id>',
-        '/web/content/<int:id>/<string:filename>',
-        '/web/content/<int:id>-<string:unique>',
-        '/web/content/<int:id>-<string:unique>/<string:filename>',
-        '/web/content/<int:id>-<string:unique>/<path:extra>/<string:filename>',
-        '/web/content/<string:model>/<int:id>/<string:field>',
-        '/web/content/<string:model>/<int:id>/<string:field>/<string:filename>'], type='http', auth="public")
-    def content_common(self, xmlid=None, model='ir.attachment', id=None, field='datas',
-                       filename=None, filename_field='name', unique=None, mimetype=None,
-                       download=None, data=None, token=None, access_token=None, **kw):
-
+    @http.route(
+        [
+            "/web/content",
+            "/web/content/<string:xmlid>",
+            "/web/content/<string:xmlid>/<string:filename>",
+            "/web/content/<int:id>",
+            "/web/content/<int:id>/<string:filename>",
+            "/web/content/<int:id>-<string:unique>",
+            "/web/content/<int:id>-<string:unique>/<string:filename>",
+            "/web/content/<int:id>-<string:unique>/<path:extra>/<string:filename>",
+            "/web/content/<string:model>/<int:id>/<string:field>",
+            "/web/content/<string:model>/<int:id>/<string:field>/<string:filename>",
+        ],
+        type="http",
+        auth="public",
+    )
+    def content_common(
+        self,
+        xmlid=None,
+        model="ir.attachment",
+        id=None,
+        field="datas",
+        filename=None,
+        filename_field="name",
+        unique=None,
+        mimetype=None,
+        download=None,
+        data=None,
+        token=None,
+        access_token=None,
+        **kw,
+    ):
         attachment_id = request.env["ir.attachment"].sudo().search([["id", "=", id]])
         allowed_groups = attachment_id.visibility_group_ids
         user_id = request.env.user
@@ -84,5 +102,5 @@ class BinaryGroupPermissions(Binary):
             data,
             token,
             access_token,
-            **kw
+            **kw,
         )
