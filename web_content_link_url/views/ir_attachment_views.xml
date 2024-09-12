@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_attachment_form_link_url" model="ir.ui.view">
+        <field name="name">view.attachment.form.link.url</field>
+        <field name="model">ir.attachment</field>
+        <field name="inherit_id" ref="website.view_attachment_form_inherit_website" />
+        <field name="arch" type="xml">
+            <field name="website_id" position="after">
+                <field name="link_url" widget="url" invisible="not link_url" />
+            </field>
+        </field>
+    </record>
+</odoo>

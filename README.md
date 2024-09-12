@@ -11,6 +11,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[web_content_group_permissions](web_content_group_permissions/) | 17.0.1.0.0 |  | Add group viewing permissions for web content (ir.attachment)
+[web_content_link_url](web_content_link_url/) | 17.0.1.0.1 |  | Web Content Link URL to share
+[web_editor_always_display_code_view](web_editor_always_display_code_view/) | 17.0.1.0.0 |  | Always display code view in web_editor without debug mode
 [web_form_view_show_all_smart_buttons](web_form_view_show_all_smart_buttons/) | 17.0.1.1.0 |  | Show all smart buttons on form view
 [web_report_sfs](web_report_sfs/) | 17.0.1.0.2 |  | Alter report layout to follow SFS 2487 standard formatting
 [web_report_sfs_footer_country](web_report_sfs_footer_country/) | 17.0.1.0.0 |  | SFS 2487 report - Country information in the footer
