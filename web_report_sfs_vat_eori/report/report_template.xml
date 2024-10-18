@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="footer" inherit_id="web_report_sfs.footer">
+        <xpath expr="//t[@name='company-vat']//span[1]" position="attributes">
+            <attribute name="t-if">1 == 0</attribute>
+        </xpath>
+
+        <xpath expr="//t[@name='company-vat']//span[1]" position="before">
+            <span>VAT/EORI</span>
+        </xpath>
+    </template>
+</odoo>
