@@ -2,9 +2,17 @@
 <odoo>
     <template id="footer" inherit_id="web_report_sfs.footer">
         <div class="footer" position="attributes">
+
+            <t t-if="company.web_footer_size">
+                <t t-set="footer_padding" t-value="company.web_footer_size" />
+            </t>
+            <t t-else="">
+                <t t-set="footer_padding" t-value="3" />
+            </t>
+
             <attribute
                 name="t-att-style"
-            >'font-size: 12px; padding-top: {}em;'.format(company.web_footer_size or 3).replace(",", ".")</attribute>
+            >'font-size: 12px; padding-top: {}em;'.format(footer_padding).replace(",", ".")</attribute>
         </div>
     </template>
 </odoo>
