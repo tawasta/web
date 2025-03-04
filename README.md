@@ -18,6 +18,7 @@ addon | version | maintainers | summary
 [web_report_sfs](web_report_sfs/) | 17.0.1.0.3 |  | Alter report layout to follow SFS 2487 standard formatting
 [web_report_sfs_footer_bank_info](web_report_sfs_footer_bank_info/) | 17.0.1.0.0 |  | SFS 2487 report - Bank information in the footer
 [web_report_sfs_footer_country](web_report_sfs_footer_country/) | 17.0.1.0.0 |  | SFS 2487 report - Country information in the footer
+[web_report_sfs_footer_eori](web_report_sfs_footer_eori/) | 17.0.1.0.0 |  | Adds company's EORI number to report footer
 [web_report_sfs_footer_size](web_report_sfs_footer_size/) | 17.0.1.0.2 |  | Report's footer upper padding can be changed from settings
 [web_responsive_modal_toolbar_visibility_fix](web_responsive_modal_toolbar_visibility_fix/) | 17.0.1.0.0 |  | Bring the WYSIWYG toolbar to top
 [web_tree_view_limit](web_tree_view_limit/) | 17.0.1.0.0 |  | Change General Tree-view record limit from settings
