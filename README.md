@@ -11,6 +11,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[systray_buttons_parameter](systray_buttons_parameter/) | 17.0.1.0.0 |  | Systray buttons parameter
 [web_content_group_permissions](web_content_group_permissions/) | 17.0.1.0.0 |  | Add group viewing permissions for web content (ir.attachment)
 [web_content_link_url](web_content_link_url/) | 17.0.1.0.1 |  | Web Content Link URL to share
 [web_editor_always_display_code_view](web_editor_always_display_code_view/) | 17.0.1.0.0 |  | Always display code view in web_editor without debug mode
