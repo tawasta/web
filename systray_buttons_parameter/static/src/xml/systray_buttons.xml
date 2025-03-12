@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="systray_buttons">
+        <Dropdown position="'bottom-end'" autoOpen="false" class="o_systray_dropdown">
+            <t t-set-slot="toggler">
+                <i
+                    class="fa fa-lg fa-bars o_systray_toggle_icon bg-primary"
+                    role="img"
+                    aria-label="Systray Menu"
+                />
+            </t>
+            <t t-set-slot="default">
+                <div class="o_systray_menu card shadow-lg p-2">
+                    <div
+                        t-if="state.systrayButtons.length === 0"
+                        class="o_systray_empty text-muted text-center p-3"
+                    >
+                        <span>No systray buttons available.</span>
+                    </div>
+                    <ul class="list-group">
+                        <t
+                            t-foreach="state.systrayButtons"
+                            t-as="button"
+                            t-key="button.url"
+                        >
+                            <li
+                                class="o_systray_item list-group-item d-flex align-items-center p-2 cursor-pointer"
+                                t-on-click="() => this.openUrl(button.url)"
+                            >
+                                <i
+                                    t-att-class="'fa ' + button.img + ' o_systray_icon me-2'"
+                                />
+                                <span class="o_systray_title flex-grow-1"><t
+                                        t-out="button.title"
+                                    /></span>
+                            </li>
+                        </t>
+                    </ul>
+                </div>
+            </t>
+        </Dropdown>
+    </t>
+</templates>
