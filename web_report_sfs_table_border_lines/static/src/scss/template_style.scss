@@ -1,0 +1,23 @@
+.table > tbody > tr:not(:last-child) > td {
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    z-index: 1;
+}
+
+.table > thead > tr > th:not(:first-child) {
+    border-left: 1px solid lightgray;
+    position: relative;
+    z-index: 1;
+}
+
+.table > thead > tr > th {
+    border-bottom: 1px solid black !important;
+    position: relative;
+    z-index: 2;
+}
+
+.table > tbody > tr > td:not(:first-child) {
+    border-left: 1px solid lightgray;
+    position: relative;
+    z-index: 1;
+}
