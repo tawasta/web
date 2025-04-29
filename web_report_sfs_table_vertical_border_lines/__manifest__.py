@@ -19,8 +19,8 @@
 ##############################################################################
 
 {
-    "name": "Add grey border lines to report table. Use this with QWeb reports",
-    "summary": "Add grey border lines to report table. Use this with QWeb reports",
+    "name": "Add grey vertical border lines to report table. Use this with QWeb reports",
+    "summary": "Add grey vertical border lines to report table. Use this with QWeb reports",
     "version": "17.0.1.1.1",
     "category": "Reporting",
     "website": "https://gitlab.com/tawasta/odoo/web",
@@ -34,7 +34,7 @@
     "data": [],
     "assets": {
         "web.report_assets_common": [
-            "web_report_sfs_table_border_lines/static/src/scss/template_style.scss",
+            "web_report_sfs_table_vertical_border_lines/static/src/scss/template_style.scss",
         ],
     },
 }
