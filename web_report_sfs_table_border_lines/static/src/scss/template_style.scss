@@ -1,11 +1,16 @@
-.table > tbody > tr:not(:last-child) > td {
+div:not(#total) > .table > tbody > tr:not(:last-child) > td {
     border-bottom: 1px solid lightgray;
     position: relative;
     z-index: 1;
 }
 
-.table > thead > tr > th {
+div:not(#total) > .table > thead > tr > th {
     border-bottom: 1px solid lightgray !important;
     position: relative;
     z-index: 2;
+}
+
+#total .table > tbody > tr:not(:last-child) > td,
+#total .table > thead > tr > th {
+    border-bottom: none !important;
 }
