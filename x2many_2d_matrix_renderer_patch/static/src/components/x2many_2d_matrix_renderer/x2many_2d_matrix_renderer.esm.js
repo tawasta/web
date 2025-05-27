@@ -211,7 +211,7 @@ export class X2Many2DMatrixRenderer extends Component {
 
 }
 
-X2Many2DMatrixRenderer.template = "web_widget_x2many_2d_matrix.X2Many2DMatrixRenderer";
+X2Many2DMatrixRenderer.template = "x2many_2d_matrix_renderer_patch.X2Many2DMatrixRenderer";
 X2Many2DMatrixRenderer.props = {
     list: { type: Object, optional: true },
     matrixFields: { type: Object, optional: true },

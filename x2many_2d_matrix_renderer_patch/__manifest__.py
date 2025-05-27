@@ -31,10 +31,13 @@
     "depends": ["web_widget_x2many_2d_matrix"],
     "assets": {
         "web.assets_backend": [
+            "x2many_2d_matrix_renderer_patch/static/src/components/x2many_2d_matrix_field/x2many_2d_matrix_field.esm.js",
+            "x2many_2d_matrix_renderer_patch/static/src/components/x2many_2d_matrix_field/x2many_2d_matrix_field.xml",
             "x2many_2d_matrix_renderer_patch/static/src/components/x2many_2d_matrix_renderer/x2many_2d_matrix_renderer.esm.js",
             "x2many_2d_matrix_renderer_patch/static/src/components/x2many_2d_matrix_renderer/x2many_2d_matrix_renderer.xml",
             ('remove', 'web_widget_x2many_2d_matrix/static/src/components/x2many_2d_matrix_renderer/x2many_2d_matrix_renderer.esm.js'),
             ('remove', 'web_widget_x2many_2d_matrix/static/src/components/x2many_2d_matrix_field/x2many_2d_matrix_field.esm.js'),
+            
         ],
     },
 }
