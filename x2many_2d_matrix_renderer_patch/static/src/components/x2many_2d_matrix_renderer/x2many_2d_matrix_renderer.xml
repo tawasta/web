@@ -19,10 +19,20 @@
                     </td>
                     <td t-foreach="columns" t-as="column" t-key="column.value">
                             <!-- Näytetään muokattava syöte, jossa displayValue näkyy -->
-                            <input type="text"
+                            <!-- <input type="text"
                                    class="o_input"
                                    t-att-value="matrix[rows.findIndex(r => r.value === row.value)][columns.findIndex(c => c.value === column.value)].displayValue"
-                                   t-on-change="ev => this.updateFromDisplayValue(ev.target.value, column.value, row.value)"/>
+                                   t-on-change="ev => this.updateFromDisplayValue(ev.target.value, column.value, row.value)"/> -->
+                                   <t t-if="!props.readonly">
+                                        <input type="text"
+                                               class="o_input"
+                                               t-att-value="matrix[rows.findIndex(r => r.value === row.value)][columns.findIndex(c => c.value === column.value)].displayValue"
+                                               t-on-change="ev => this.updateFromDisplayValue(ev.target.value, column.value, row.value)"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span t-esc="matrix[rows.findIndex(r => r.value === row.value)][columns.findIndex(c => c.value === column.value)].displayValue"/>
+                                    </t>
+
                     </td>
                     <td t-if="props.showRowTotals and _canAggregate()" class="row-total">
                         <span t-esc="_aggregateRow(row.value)"/>
