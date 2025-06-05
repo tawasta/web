@@ -1,7 +1,7 @@
 ##############################################################################
 #
-#    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2022- Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Author: Futural Oy
+#    Copyright 2022- Futural Oy (https://futural.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -23,8 +23,8 @@
     "summary": "Always display code view in web_editor without debug mode",
     "version": "17.0.1.0.0",
     "category": "Web",
-    "website": "https://gitlab.com/tawasta/odoo/web",
-    "author": "Tawasta",
+    "website": "https://github.com/tawasta/web",
+    "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,

@@ -1,7 +1,7 @@
 ##############################################################################
 #
-#    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2019 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Author: Futural Oy
+#    Copyright 2019 Futural Oy (https://futural.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -23,8 +23,8 @@
     "summary": "Override and extend the 2D matrix renderer for x2many fields",
     "version": "17.0.1.0.0",
     "category": "Web",
-    "website": "https://gitlab.com/tawasta/odoo/web",
-    "author": "Tawasta",
+    "website": "https://github.com/tawasta/web",
+    "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
@@ -35,9 +35,14 @@
             "x2many_2d_matrix_renderer_patch/static/src/components/x2many_2d_matrix_field/x2many_2d_matrix_field.xml",
             "x2many_2d_matrix_renderer_patch/static/src/components/x2many_2d_matrix_renderer/x2many_2d_matrix_renderer.esm.js",
             "x2many_2d_matrix_renderer_patch/static/src/components/x2many_2d_matrix_renderer/x2many_2d_matrix_renderer.xml",
-            ('remove', 'web_widget_x2many_2d_matrix/static/src/components/x2many_2d_matrix_renderer/x2many_2d_matrix_renderer.esm.js'),
-            ('remove', 'web_widget_x2many_2d_matrix/static/src/components/x2many_2d_matrix_field/x2many_2d_matrix_field.esm.js'),
-            
+            (
+                "remove",
+                "web_widget_x2many_2d_matrix/static/src/components/x2many_2d_matrix_renderer/x2many_2d_matrix_renderer.esm.js",
+            ),
+            (
+                "remove",
+                "web_widget_x2many_2d_matrix/static/src/components/x2many_2d_matrix_field/x2many_2d_matrix_field.esm.js",
+            ),
         ],
     },
 }
