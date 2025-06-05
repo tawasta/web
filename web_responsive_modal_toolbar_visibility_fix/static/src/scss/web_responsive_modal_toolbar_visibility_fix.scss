@@ -1,0 +1,17 @@
+/*
+
+The original rule in web_responsive is:
+
+body:not(.o_statusbar_buttons) {
+    .oe-toolbar {
+        z-index: 0 !important;
+    }
+}
+So this one overrides it when a modal window is open.
+*/
+
+body.modal-open:not(.o_statusbar_buttons) {
+    .oe-toolbar {
+        z-index: 9999 !important;
+    }
+}

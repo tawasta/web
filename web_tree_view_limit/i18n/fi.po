@@ -1,0 +1,61 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_tree_view_limit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20241118\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-04 07:36+0000\n"
+"PO-Revision-Date: 2025-03-04 07:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: web_tree_view_limit
+#: model:ir.model,name:web_tree_view_limit.model_ir_actions_act_window
+msgid "Action Window"
+msgstr "Toimintoikkuna"
+
+#. module: web_tree_view_limit
+#. odoo-python
+#: code:addons/web_tree_view_limit/models/ir_act_window.py:0
+#, python-format
+msgid "Assign values to actions: {}"
+msgstr ""
+
+#. module: web_tree_view_limit
+#: model:ir.model.fields,help:web_tree_view_limit.field_res_company__web_tree_view_limit
+#: model:ir.model.fields,help:web_tree_view_limit.field_res_config_settings__web_tree_view_limit
+msgid "Change the number of records shown on all tree views per page"
+msgstr "Vaihda listanäkymissä näkyvien tietueiden määrä per sivu"
+
+#. module: web_tree_view_limit
+#: model:ir.model,name:web_tree_view_limit.model_res_company
+msgid "Companies"
+msgstr "Yritykset"
+
+#. module: web_tree_view_limit
+#: model:ir.model,name:web_tree_view_limit.model_res_config_settings
+msgid "Config Settings"
+msgstr "Asetukset"
+
+#. module: web_tree_view_limit
+#: model:ir.model.fields,field_description:web_tree_view_limit.field_res_company__web_tree_view_limit
+#: model:ir.model.fields,field_description:web_tree_view_limit.field_res_config_settings__web_tree_view_limit
+msgid "General Tree view limit"
+msgstr "Yleinen listanäkymien tietuemäärä"
+
+#. module: web_tree_view_limit
+#: model_terms:ir.ui.view,arch_db:web_tree_view_limit.res_config_settings_view_form
+msgid "Set the number of records shown on tree views per page"
+msgstr "Aseta listanäkymissä näkyvien tietueiden määrä per sivu"
+
+#. module: web_tree_view_limit
+#: model:ir.actions.server,name:web_tree_view_limit.ir_cron_update_action_windows_limit_ir_actions_server
+msgid "Update Action windows limit (web_tree_view_limit)"
+msgstr "Päivitä listanäkymien tietuemäärät (web_tree_view_limit)"
+
