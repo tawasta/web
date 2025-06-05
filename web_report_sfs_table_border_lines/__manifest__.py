@@ -23,7 +23,7 @@
     "summary": "Add grey border lines to report table. Use this with QWeb reports",
     "version": "17.0.1.1.2",
     "category": "Reporting",
-    "website": "https://gitlab.com/tawasta/odoo/web",
+    "website": "https://github.com/tawasta/web",
     "author": "Futural",
     "license": "AGPL-3",
     "application": False,

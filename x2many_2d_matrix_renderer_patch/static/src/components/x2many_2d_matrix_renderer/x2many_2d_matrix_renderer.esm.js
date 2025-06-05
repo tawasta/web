@@ -25,7 +25,9 @@ export class X2Many2DMatrixRenderer extends Component {
         const totalMinutes = Math.round(floatValue * 60);
         const hours = Math.floor(totalMinutes / 60);
         const minutes = totalMinutes % 60;
-        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+        return `${hours.toString().padStart(2, "0")}:${minutes
+            .toString()
+            .padStart(2, "0")}`;
     }
 
     _getColumns(records = this.list.records) {
@@ -81,14 +83,14 @@ export class X2Many2DMatrixRenderer extends Component {
             new Array(this.columns.length).fill(null).map(() => {
                 return {
                     value: 0,
-                    displayValue: '00:00',
-                    records: []
+                    displayValue: "00:00",
+                    records: [],
                 };
             })
         );
         records.forEach((record) => {
             const rawValue = record.data[this.matrixFields.value];
-            const { x, y } = this._getPointOfRecord(record);
+            const {x, y} = this._getPointOfRecord(record);
             matrix[y][x].value += rawValue;
             matrix[y][x].displayValue = this._formatFloatToHHMM(matrix[y][x].value);
             matrix[y][x].records.push(record);
@@ -149,7 +151,9 @@ export class X2Many2DMatrixRenderer extends Component {
     }
 
     _canAggregate() {
-        return ["integer", "float", "monetary"].includes(this.list.fields[this.matrixFields.value].type);
+        return ["integer", "float", "monetary"].includes(
+            this.list.fields[this.matrixFields.value].type
+        );
     }
 
     getValueFieldProps(column, row) {
@@ -157,7 +161,11 @@ export class X2Many2DMatrixRenderer extends Component {
         const y = this.rows.findIndex((r) => r.value === row);
         let record = null;
         let value = null;
-        if (this.matrix[y] && this.matrix[y][x] && (record = this.matrix[y][x].records[0])) {
+        if (
+            this.matrix[y] &&
+            this.matrix[y][x] &&
+            (record = this.matrix[y][x].records[0])
+        ) {
             record = this.matrix[y][x].records[0];
             value = this.matrix[y][x].value;
         }
@@ -175,7 +183,9 @@ export class X2Many2DMatrixRenderer extends Component {
         };
         const domain = record.fields[this.matrixFields.value].domain;
         if (domain) {
-            result.domain = new Domain(evaluateExpr(domain, record.evalContext)).toList();
+            result.domain = new Domain(
+                evaluateExpr(domain, record.evalContext)
+            ).toList();
         }
         if (value === null) {
             result.readonly = true;
@@ -202,26 +212,26 @@ export class X2Many2DMatrixRenderer extends Component {
         // Päivitä oikea record oikein:
         if (cell.records.length > 0) {
             const record = cell.records[0];
-            record.update({ [this.matrixFields.value]: newFloat });
+            record.update({[this.matrixFields.value]: newFloat});
         }
 
         // Triggeröi re-renderöinti
         this.render();
     }
-
 }
 
-X2Many2DMatrixRenderer.template = "x2many_2d_matrix_renderer_patch.X2Many2DMatrixRenderer";
+X2Many2DMatrixRenderer.template =
+    "x2many_2d_matrix_renderer_patch.X2Many2DMatrixRenderer";
 X2Many2DMatrixRenderer.props = {
-    list: { type: Object, optional: true },
-    matrixFields: { type: Object, optional: true },
-    readonly: { type: Boolean, optional: true },
-    domain: { type: [Array, Function], optional: true },
-    showRowTotals: { type: Boolean, optional: true },
-    showColumnTotals: { type: Boolean, optional: true },
-    canOpen: { type: Boolean, optional: true },
-    canCreate: { type: Boolean, optional: true },
-    canWrite: { type: Boolean, optional: true },
-    canQuickCreate: { type: Boolean, optional: true },
-    canCreateEdit: { type: Boolean, optional: true },
+    list: {type: Object, optional: true},
+    matrixFields: {type: Object, optional: true},
+    readonly: {type: Boolean, optional: true},
+    domain: {type: [Array, Function], optional: true},
+    showRowTotals: {type: Boolean, optional: true},
+    showColumnTotals: {type: Boolean, optional: true},
+    canOpen: {type: Boolean, optional: true},
+    canCreate: {type: Boolean, optional: true},
+    canWrite: {type: Boolean, optional: true},
+    canQuickCreate: {type: Boolean, optional: true},
+    canCreateEdit: {type: Boolean, optional: true},
 };

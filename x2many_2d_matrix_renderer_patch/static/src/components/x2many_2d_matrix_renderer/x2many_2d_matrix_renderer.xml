@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates>
     <t t-name="x2many_2d_matrix_renderer_patch.X2Many2DMatrixRenderer">
-        <table class="o_list_table table table-responsive table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped"
-               t-if="rows.length > 0">
+        <table
+            class="o_list_table table table-responsive table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped"
+            t-if="rows.length > 0"
+        >
             <thead>
                 <tr>
                     <th />
-                    <th t-foreach="columns" t-as="column" t-key="column.value" class="text-center">
-                        <t t-esc="column.text"/>
+                    <th
+                        t-foreach="columns"
+                        t-as="column"
+                        t-key="column.value"
+                        class="text-center"
+                    >
+                        <t t-esc="column.text" />
                     </th>
                     <th t-if="props.showRowTotals" />
                 </tr>
@@ -15,7 +22,7 @@
             <tbody>
                 <tr t-foreach="rows" t-as="row" t-key="row.value">
                     <td>
-                        <t t-esc="row.text"/>
+                        <t t-esc="row.text" />
                     </td>
                     <td t-foreach="columns" t-as="column" t-key="column.value">
                             <!-- Näytetään muokattava syöte, jossa displayValue näkyy -->
@@ -24,18 +31,25 @@
                                    t-att-value="matrix[rows.findIndex(r => r.value === row.value)][columns.findIndex(c => c.value === column.value)].displayValue"
                                    t-on-change="ev => this.updateFromDisplayValue(ev.target.value, column.value, row.value)"/> -->
                                    <t t-if="!props.readonly">
-                                        <input type="text"
-                                               class="o_input"
-                                               t-att-value="matrix[rows.findIndex(r => r.value === row.value)][columns.findIndex(c => c.value === column.value)].displayValue"
-                                               t-on-change="ev => this.updateFromDisplayValue(ev.target.value, column.value, row.value)"/>
+                                        <input
+                                type="text"
+                                class="o_input"
+                                t-att-value="matrix[rows.findIndex(r => r.value === row.value)][columns.findIndex(c => c.value === column.value)].displayValue"
+                                t-on-change="ev => this.updateFromDisplayValue(ev.target.value, column.value, row.value)"
+                            />
                                     </t>
                                     <t t-else="">
-                                        <span t-esc="matrix[rows.findIndex(r => r.value === row.value)][columns.findIndex(c => c.value === column.value)].displayValue"/>
+                                        <span
+                                t-esc="matrix[rows.findIndex(r => r.value === row.value)][columns.findIndex(c => c.value === column.value)].displayValue"
+                            />
                                     </t>
 
                     </td>
-                    <td t-if="props.showRowTotals and _canAggregate()" class="row-total">
-                        <span t-esc="_aggregateRow(row.value)"/>
+                    <td
+                        t-if="props.showRowTotals and _canAggregate()"
+                        class="row-total"
+                    >
+                        <span t-esc="_aggregateRow(row.value)" />
                     </td>
                 </tr>
             </tbody>
@@ -43,10 +57,10 @@
                 <tr t-if="props.showColumnTotals and _canAggregate()">
                     <th />
                     <th t-foreach="columns" t-as="column" t-key="column.value">
-                        <span t-esc="_aggregateColumn(column.value)"/>
+                        <span t-esc="_aggregateColumn(column.value)" />
                     </th>
                     <th t-if="props.showRowTotals" class="col-total">
-                        <span t-esc="_aggregateAll()"/>
+                        <span t-esc="_aggregateAll()" />
                     </th>
                 </tr>
             </tfoot>
