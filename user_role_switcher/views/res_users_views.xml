@@ -6,9 +6,9 @@
     <field name="inherit_id" ref="base_user_role.view_res_users_form_inherit"/>
     <field name="arch" type="xml">
         <!-- Role line näkyy vain jos current_role_id on tyhjä -->
-        <xpath expr="//field[@name='role_line_ids']" position="attributes">
+        <!--<xpath expr="//field[@name='role_line_ids']" position="attributes">
             <attribute name="attrs">{'invisible': [('current_role_id', '!=', False)]}</attribute>
-        </xpath>
+        </xpath>-->
         <xpath expr="//field[@name='role_line_ids']" position="after">
             <group string="Roles" attrs="{'invisible': [('current_role_id', '=', False)]}">
                 <field name="allowed_role_ids" widget="many2many_tags"/>

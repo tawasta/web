@@ -72,5 +72,27 @@ class ResUsers(models.Model):
         # Päivitä ryhmät core-logiikan mukaisesti
         user.set_groups_from_roles(force=True)
 
+        # --- Tarkistus: onko käyttäjä sisäinen vai ulkoinen ---
+        internal_group = self.env.ref('base.group_user')
+        portal_group = self.env.ref('base.group_portal')
+
+        is_internal = internal_group in user.groups_id
+        is_portal = portal_group in user.groups_id
+        main_company = self.env.ref('base.main_company', raise_if_not_found=False) or self.env.company
+        if is_internal:
+            other_companies = user.company_ids.filtered(lambda c: not main_company or c.id != main_company.id)
+            if other_companies:
+                target_company = other_companies[0]
+                if user.company_id != target_company:
+                    user.sudo().write({'company_id': target_company.id})
+        elif is_portal:
+            if main_company:
+                if user.company_id != main_company:
+                    user.sudo().write({'company_id': main_company.id})
+
+        else:
+            _logger.warning("User %s does not belong to standard internal or portal groups", user.login)
+
+
         return True
 
