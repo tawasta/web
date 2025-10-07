@@ -13,6 +13,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [report_element_sizes](report_element_sizes/) | 14.0.1.0.1 |  | Global Report element size modifications
 [systray_buttons_parameter](systray_buttons_parameter/) | 14.0.1.0.0 |  | Systray buttons parameter
+[user_role_switcher](user_role_switcher/) | 14.0.1.0.0 |  | User Role Switcher
 [web_action_menus_hide_for_group](web_action_menus_hide_for_group/) | 14.0.1.0.0 |  | Hide Print and Action menus in backend for group members
 [web_arial_font](web_arial_font/) | 14.0.1.0.2 |  | Arial font option for PDF prints
 [web_company_color_overrides](web_company_color_overrides/) | 14.0.1.0.1 |  | Overrides for making certain items more readable

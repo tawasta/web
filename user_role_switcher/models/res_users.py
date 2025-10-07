@@ -1,6 +1,7 @@
-from odoo import api, fields, models, _
-from odoo.exceptions import AccessError, UserError
 import logging
+
+from odoo import _, api, fields, models
+from odoo.exceptions import AccessError, UserError
 
 _logger = logging.getLogger(__name__)
 
@@ -8,6 +9,7 @@ FORBIDDEN_GROUPS = [
     "base.group_no_one",
     "base.group_system",
 ]
+
 
 class ResUsers(models.Model):
     _inherit = "res.users"
@@ -17,7 +19,7 @@ class ResUsers(models.Model):
         "res_users_allowed_role_rel",
         "user_id",
         "role_id",
-        string="Allowed Roles"
+        string="Allowed Roles",
     )
     current_role_id = fields.Many2one("res.users.role", string="Current Role")
 
@@ -29,10 +31,12 @@ class ResUsers(models.Model):
             for role in user.allowed_role_ids:
                 # Luo role_line_id vain, jos sitä ei vielä ole
                 if not user.role_line_ids.filtered(lambda l: l.role_id == role):
-                    self.env['res.users.role.line'].sudo().create({
-                        'user_id': user.id,
-                        'role_id': role.id,
-                    })
+                    self.env["res.users.role.line"].sudo().create(
+                        {
+                            "user_id": user.id,
+                            "role_id": role.id,
+                        }
+                    )
             # Päivitä ryhmät force=True
             user.set_groups_from_roles(force=True)
         return user
@@ -59,10 +63,12 @@ class ResUsers(models.Model):
         # Luo valittu rooli jos sitä ei vielä ole
         existing_line = user.role_line_ids.filtered(lambda l: l.role_id == role)
         if not existing_line:
-            self.env['res.users.role.line'].sudo().create({
-                'user_id': user.id,
-                'role_id': role.id,
-            })
+            self.env["res.users.role.line"].sudo().create(
+                {
+                    "user_id": user.id,
+                    "role_id": role.id,
+                }
+            )
 
         # Poista kaikki muut role_line_ids paitsi valittu
         lines_to_remove = user.role_line_ids.filtered(lambda l: l.role_id != role)
@@ -73,26 +79,32 @@ class ResUsers(models.Model):
         user.set_groups_from_roles(force=True)
 
         # --- Tarkistus: onko käyttäjä sisäinen vai ulkoinen ---
-        internal_group = self.env.ref('base.group_user')
-        portal_group = self.env.ref('base.group_portal')
+        internal_group = self.env.ref("base.group_user")
+        portal_group = self.env.ref("base.group_portal")
 
         is_internal = internal_group in user.groups_id
         is_portal = portal_group in user.groups_id
-        main_company = self.env.ref('base.main_company', raise_if_not_found=False) or self.env.company
+        main_company = (
+            self.env.ref("base.main_company", raise_if_not_found=False)
+            or self.env.company
+        )
         if is_internal:
-            other_companies = user.company_ids.filtered(lambda c: not main_company or c.id != main_company.id)
+            other_companies = user.company_ids.filtered(
+                lambda c: not main_company or c.id != main_company.id
+            )
             if other_companies:
                 target_company = other_companies[0]
                 if user.company_id != target_company:
-                    user.sudo().write({'company_id': target_company.id})
+                    user.sudo().write({"company_id": target_company.id})
         elif is_portal:
             if main_company:
                 if user.company_id != main_company:
-                    user.sudo().write({'company_id': main_company.id})
+                    user.sudo().write({"company_id": main_company.id})
 
         else:
-            _logger.warning("User %s does not belong to standard internal or portal groups", user.login)
-
+            _logger.warning(
+                "User %s does not belong to standard internal or portal groups",
+                user.login,
+            )
 
         return True
-
