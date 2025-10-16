@@ -2,11 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-==========================================================================
-Add grey vertical border lines to report table. Use this with QWeb reports
-==========================================================================
+========================================================
+Standard report formatting - Table vertical border lines
+========================================================
 
-Add grey vertical border lines to report table. Use this with QWeb reports
+* Adds grey vertical border lines to report table. Use this with QWeb reports
 
 Configuration
 =============

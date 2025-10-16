@@ -2,11 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-================================================
-SFS 2487 report - Bank information in the footer
-================================================
+===========================================================
+Standard report formatting - Bank information in the footer
+===========================================================
 
-* SFS 2487 report - Bank information in the footer
+Standard formatted report - Bank information in the footer
 
 Configuration
 =============

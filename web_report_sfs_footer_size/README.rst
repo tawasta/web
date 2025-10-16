@@ -2,9 +2,9 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-===========================================
-Change SFS report footer size from settings
-===========================================
+=====================================================
+Standard report formatting - configurable footer size
+=====================================================
 
 * Report's footer upper padding can be changed from General settings
 

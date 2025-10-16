@@ -19,7 +19,7 @@
 ##############################################################################
 
 {
-    "name": "Grey vertical border lines to report table. Use this with QWeb reports",
+    "name": "Standard report formatting - Table vertical border lines",
     "summary": "Add a vertical border lines to report table. Use with QWeb reports",
     "version": "17.0.1.1.1",
     "category": "Reporting",
