@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- oca-hooks:disable=xml-dangerous-qweb-replace-low-priority -->
 <odoo>
-    <!-- SFS 2487 compliant header -->
+    <!-- SFS-adjacent header -->
     <template id="header">
-        <t t-name="SFS header">
+        <t t-name="SFS-adjacent header">
             <div class="header" t-if="not hide_header">
                 <div class="row">
                     <div class="col-6" name="header-left-col">
@@ -58,7 +58,7 @@
             </div>
         </t>
     </template>
-    <!-- SFS 2487 compliant footer -->
+    <!-- SFS-adjacent footer -->
     <template id="footer">
         <t t-name="Footer">
             <!-- There should be at least 3 empty rows before footer -->

@@ -19,8 +19,8 @@
 ##############################################################################
 
 {
-    "name": "SFS 2487 report - Bank information in the footer",
-    "summary": "SFS 2487 report - Bank information in the footer",
+    "name": "Standard report formatting - Bank information in the footer",
+    "summary": "Standard formatted report - Bank information in the footer",
     "version": "17.0.1.0.0",
     "category": "Web",
     "website": "https://github.com/tawasta/web",

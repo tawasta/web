@@ -19,8 +19,8 @@
 ##############################################################################
 
 {
-    "name": "SFS 2487 report layout",
-    "summary": "Alter report layout to follow SFS 2487 standard formatting",
+    "name": "Report layout standard formatting",
+    "summary": "Alter report layout to be similar to SFS 2487 standard formatting",
     "version": "17.0.1.0.3",
     "category": "Web",
     "website": "https://github.com/tawasta/web",

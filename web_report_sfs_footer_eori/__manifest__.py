@@ -19,7 +19,7 @@
 ##############################################################################
 
 {
-    "name": "Web Report SFS Footer EORI",
+    "name": "Standard report formatting - EORI number",
     "summary": "Adds company's EORI number to report footer",
     "version": "17.0.1.0.0",
     "category": "Reporting",

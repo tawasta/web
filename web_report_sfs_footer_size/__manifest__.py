@@ -19,7 +19,7 @@
 ##############################################################################
 
 {
-    "name": "Change SFS report footer size from settings",
+    "name": "Standard report formatting - configurable footer size",
     "summary": "Report's footer upper padding can be changed from settings",
     "version": "17.0.1.0.2",
     "category": "Web",
