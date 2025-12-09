@@ -19,11 +19,11 @@
 ##############################################################################
 
 {
-    "name": "Add grey vertical border lines to report table. Use this with QWeb reports",
-    "summary": "Add grey vertical border lines to report table. Use this with QWeb reports",
+    "name": "Standard report formatting - Table vertical border lines",
+    "summary": "Add a vertical border lines to report table. Use with QWeb reports",
     "version": "17.0.1.1.1",
     "category": "Reporting",
-    "website": "https://gitlab.com/tawasta/odoo/web",
+    "website": "https://github.com/tawasta/web",
     "author": "Futural",
     "license": "AGPL-3",
     "application": False,

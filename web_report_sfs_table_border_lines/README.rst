@@ -2,11 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-=================================================================
-Add grey border lines to report table. Use this with QWeb reports
-=================================================================
+===============================================
+Standard report formatting - Table border lines
+===============================================
 
-Add grey border lines to report table. Use this with QWeb reports
+* Adds grey border lines to report table. Use this with QWeb reports
 
 Configuration
 =============
@@ -26,13 +26,13 @@ Credits
 Contributors
 ------------
 
-* Timo Kekäläinen <timo.kekalainen@tawasta.fi>
+* Timo Kekäläinen <timo.kekalainen@futural.fi>
 
 Maintainer
 ----------
 
-.. image:: http://tawasta.fi/templates/tawastrap/images/logo.png
-   :alt: Oy Tawasta OS Technologies Ltd.
-   :target: http://tawasta.fi/
+.. image:: https://futural.fi/templates/tawastrap/images/logo.png
+   :alt: Futural Oy
+   :target: https://futural.fi/
 
-This module is maintained by Oy Tawasta OS Technologies Ltd.
+This module is maintained by Futural Oy

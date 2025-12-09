@@ -35,7 +35,7 @@ class IrActionsActWindow(models.Model):
             batch_actions.append(actions[x : x + interval])
 
         for actions in batch_actions:
-            job_desc = _("Assign values to actions: {}".format(actions))
+            job_desc = _(f"Assign values to actions: {actions}")
             self.with_delay(description=job_desc, eta=15)._cron_update_actions_limit(
                 actions
             )
