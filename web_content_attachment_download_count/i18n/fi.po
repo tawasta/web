@@ -1,0 +1,31 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_content_attachment_download_count
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-08 10:36+0000\n"
+"PO-Revision-Date: 2026-01-08 10:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: web_content_attachment_download_count
+#: model:ir.model,name:web_content_attachment_download_count.model_ir_attachment
+msgid "Attachment"
+msgstr "Liite"
+
+#. module: web_content_attachment_download_count
+#: model:ir.model.fields,field_description:web_content_attachment_download_count.field_ir_attachment__download_count
+msgid "Download Count"
+msgstr "Latausmäärä"
+
+#. module: web_content_attachment_download_count
+#: model:ir.model.fields,help:web_content_attachment_download_count.field_ir_attachment__download_count
+msgid "Tracks how many times this attachment has been downloaded"
+msgstr "Seuraa, kuinka monta kertaa liite on ladattu"

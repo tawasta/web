@@ -27,7 +27,7 @@ from odoo.exceptions import AccessDenied
 from odoo.http import request
 
 # 4. Imports from Odoo modules:
-from odoo.addons.web.controllers.main import Binary
+from odoo.addons.web.controllers.binary import Binary
 
 # 2. Known third party imports:
 
