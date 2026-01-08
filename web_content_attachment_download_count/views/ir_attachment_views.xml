@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_attachment_tree_inherit" model="ir.ui.view">
+        <field name="name">view.attachment.tree.inherit.download.count</field>
+        <field name="model">ir.attachment</field>
+        <field name="inherit_id" ref="base.view_attachment_tree" />
+        <field name="arch" type="xml">
+            <field name="file_size" position="after">
+                <field name="download_count" optional="show" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_attachment_form_inherit" model="ir.ui.view">
+        <field name="name">view.attachment.form.inherit.download.count</field>
+        <field name="model">ir.attachment</field>
+        <field name="inherit_id" ref="base.view_attachment_form" />
+        <field name="arch" type="xml">
+            <field name="public" position="after">
+                <field name="download_count" optional="show" />
+            </field>
+        </field>
+    </record>
+
+</odoo>
