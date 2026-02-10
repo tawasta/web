@@ -52,6 +52,7 @@
       </div>
     </t>
   </template>
+
   <!-- SFS-adjacent footer -->
   <template id="footer">
     <t t-name="Footer">
@@ -127,10 +128,17 @@
 
   <template id="external_layout_striped" inherit_id="web.external_layout_striped">
     <xpath
-      expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
-      position="replace"
+        expr="//div[@t-attf-class='o_company_#{company.id}_layout header']"
+      position="after"
     >
       <t t-call="web_report_sfs.header" />
+    </xpath>
+
+    <xpath
+        expr="//div[@t-attf-class='o_company_#{company.id}_layout header']"
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -139,8 +147,16 @@
 
     <xpath
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
-      position="replace"
+      position="after"
     >
+      <t t-call="web_report_sfs.footer" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
       <t t-call="web_report_sfs.footer" />
     </xpath>
   </template>
@@ -148,9 +164,16 @@
   <template id="external_layout_boxed" inherit_id="web.external_layout_boxed">
     <xpath
       expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.header" />
+    </xpath>
+
+    <xpath
+      expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -159,18 +182,32 @@
 
     <xpath
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.footer" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
   <template id="external_layout_bold" inherit_id="web.external_layout_bold">
     <xpath
       expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.header" />
+    </xpath>
+
+    <xpath
+      expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -179,18 +216,32 @@
 
     <xpath
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.footer" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
   <template id="external_layout_standard" inherit_id="web.external_layout_standard">
     <xpath
       expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.header" />
+    </xpath>
+
+    <xpath
+      expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -199,18 +250,32 @@
 
     <xpath
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.footer" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
   <template id="external_layout_folder" inherit_id="web.external_layout_folder">
     <xpath
       expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;h-0&apos;}}"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.header" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;h-0&apos;}}"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -219,18 +284,32 @@
 
     <xpath
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.footer" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
   <template id="external_layout_wave" inherit_id="web.external_layout_wave">
     <xpath
       expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;h-0&apos;}}"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.header" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;h-0&apos;}}"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -239,18 +318,32 @@
 
     <xpath
       expr='//div[@t-attf-class="o_footer_content {{report_type != &apos;pdf&apos; and &apos;position-absolute end-0 start-0 bottom-0 mx-5&apos;}} pt-5 text-center"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.footer" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="o_footer_content {{report_type != &apos;pdf&apos; and &apos;position-absolute end-0 start-0 bottom-0 mx-5&apos;}} pt-5 text-center"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
   <template id="external_layout_bubble" inherit_id="web.external_layout_bubble">
     <xpath
       expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type == &apos;pdf&apos; and &apos;pt-5&apos;}}"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.header" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type == &apos;pdf&apos; and &apos;pt-5&apos;}}"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -259,9 +352,16 @@
 
     <xpath
       expr='//div[@t-attf-class="o_footer_content {{report_type != &apos;pdf&apos; and &apos;position-absolute end-0 start-0 bottom-0 mx-5&apos;}} pt-4 text-center"]'
-      position="replace"
+      position="after"
     >
       <t t-call="web_report_sfs.footer" />
+    </xpath>
+
+    <xpath
+      expr='//div[@t-attf-class="o_footer_content {{report_type != &apos;pdf&apos; and &apos;position-absolute end-0 start-0 bottom-0 mx-5&apos;}} pt-4 text-center"]'
+      position="attributes"
+    >
+        <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 </odoo>
