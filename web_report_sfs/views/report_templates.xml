@@ -125,29 +125,25 @@
     </t>
   </template>
 
-  <!--
-    <template id="external_layout_striped" inherit_id="web.external_layout_striped">
-        <xpath
-            expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
-            position="replace"
-        >
-            <t t-call="web_report_sfs.header" />
-        </xpath>
+  <template id="external_layout_striped" inherit_id="web.external_layout_striped">
+    <xpath
+      expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+      position="replace"
+    >
+      <t t-call="web_report_sfs.header" />
+    </xpath>
 
-        <xpath expr="//t[@t-call='web.address_layout']" position="attributes" >
-            <attribute
-                name="t-att-class"
-            >'pt-{}'.format(company.web_address_size)</attribute>
-        </xpath>
+    <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
+      <attribute name="t-att-class">'pt-{}'.format(company.web_address_size)</attribute>
+    </xpath>
 
-        <xpath
-            expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
-            position="replace"
-        >
-            <t t-call="web_report_sfs.footer" />
-        </xpath>
-    </template>
-    -->
+    <xpath
+      expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+      position="replace"
+    >
+      <t t-call="web_report_sfs.footer" />
+    </xpath>
+  </template>
 
   <template id="external_layout_boxed" inherit_id="web.external_layout_boxed">
     <xpath
