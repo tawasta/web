@@ -128,17 +128,17 @@
 
   <template id="external_layout_striped" inherit_id="web.external_layout_striped">
     <xpath
-        expr="//div[@t-attf-class='o_company_#{company.id}_layout header']"
+      expr="//div[@t-attf-class='o_company_#{company.id}_layout header']"
       position="after"
     >
       <t t-call="web_report_sfs.header" />
     </xpath>
 
     <xpath
-        expr="//div[@t-attf-class='o_company_#{company.id}_layout header']"
+      expr="//div[@t-attf-class='o_company_#{company.id}_layout header']"
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -156,7 +156,7 @@
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
       <t t-call="web_report_sfs.footer" />
     </xpath>
   </template>
@@ -173,7 +173,7 @@
       expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -191,7 +191,7 @@
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
@@ -207,7 +207,7 @@
       expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -225,7 +225,7 @@
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
@@ -241,7 +241,7 @@
       expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -259,7 +259,7 @@
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
@@ -275,7 +275,7 @@
       expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;h-0&apos;}}"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -293,7 +293,7 @@
       expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
@@ -309,7 +309,7 @@
       expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;h-0&apos;}}"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -327,7 +327,7 @@
       expr='//div[@t-attf-class="o_footer_content {{report_type != &apos;pdf&apos; and &apos;position-absolute end-0 start-0 bottom-0 mx-5&apos;}} pt-5 text-center"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 
@@ -343,7 +343,7 @@
       expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type == &apos;pdf&apos; and &apos;pt-5&apos;}}"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
 
     <xpath expr="//t[@t-call='web.address_layout']" position="attributes">
@@ -361,7 +361,7 @@
       expr='//div[@t-attf-class="o_footer_content {{report_type != &apos;pdf&apos; and &apos;position-absolute end-0 start-0 bottom-0 mx-5&apos;}} pt-4 text-center"]'
       position="attributes"
     >
-        <attribute name="t-if">False</attribute>
+      <attribute name="t-if">False</attribute>
     </xpath>
   </template>
 </odoo>
