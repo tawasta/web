@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- SFS-adjacent header -->
+    <template id="header">
+        <t t-name="SFS-adjacent header">
+            <div class="header" t-if="not hide_header">
+                <div class="row">
+                    <div class="col-6" name="header-left-col">
+                        <img
+                            t-if="company.logo"
+                            t-att-src="image_data_uri(company.logo)"
+                            style="max-height: 90px; max-width: 90%;"
+                            t-att-alt="company.name or '' + ' logo'"
+                        />
+                    </div>
+                    <div class="col-3" name="header-center-col">
+                        <div name="report-title" class="row">
+                            <strong><t
+                                    t-out="report_title or doc and doc._description or ''"
+                                /></strong>
+                        </div>
+                        <div
+                            name="report-name"
+                            t-if="doc and 'name' in doc.fields_get() and doc.name"
+                            class="row"
+                        >
+                            <span t-esc="report_name or doc.name" />
+                        </div>
+                        <div name="report-date" class="row">
+                            <t t-if="header_date_value">
+                                <span t-esc="header_date_value" />
+                            </t>
+                            <t t-elif="header_date_now">
+                                <span
+                                    t-esc="context_timestamp(datetime.datetime.now()).strftime('%d.%m.%Y')"
+                                />
+                            </t>
+                        </div>
+                    </div>
+                    <div class="col-3" name="header-right-col">
+                        <div class="text-right" name="header-page-number-div">
+                            <span class="page" /> (<span class="topage" />)
+                        </div>
+                        <t t-if="confidental">
+                            <div
+                                class="text-right"
+                                name="header-confidential-div"
+                            >Confidential</div>
+                        </t>
+                    </div>
+                </div>
+                <div class="row zero_min_height" name="header-breaker">
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <!-- SFS-adjacent footer -->
+    <template id="footer">
+        <t t-name="Footer">
+            <!-- There should be at least 3 empty rows before footer -->
+            <div
+                class="footer"
+                style="font-size: 12px; padding-top: 3em;"
+                t-if="not hide_footer"
+            >
+                <div class="container row" style="border-top: 1px solid black;">
+                    <div name="footer-left-col" class="col-4">
+                        <t name="company-name" t-if="company.name"><span
+                                t-field="company.name"
+                            /><br /></t>
+                        <t name="company-street" t-if="company.partner_id.street"><span
+                                t-field="company.partner_id.street"
+                            /><br /></t>
+                        <t
+                            name="company-street2"
+                            t-if="company.partner_id.street2"
+                        ><span t-field="company.partner_id.street2" /><br /></t>
+                        <t
+                            name="company-zip-city"
+                            t-if="company.partner_id.zip or company.partner_id.city"
+                        ><span t-field="company.partner_id.zip" /> <span
+                                t-field="company.partner_id.city"
+                                style="text-transform: uppercase;"
+                            /></t>
+                    </div>
+                    <div name="footer-center-col" class="col-4">
+                        <t name="company-phone" t-if="company.phone"><span
+                            >Phone:</span> <span t-field="company.phone" /><br /></t>
+                        <t name="company-email" t-if="company.email"><span
+                            >Email:</span> <span t-field="company.email" /><br /></t>
+                        <t name="company-website" t-if="company.website"><span
+                            >Website:</span> <span t-field="company.website" /><br
+                            /></t>
+                    </div>
+                    <div name="footer-right-col" class="col-4">
+                        <t
+                            name="company-registry"
+                            t-if="company.company_registry"
+                            class="row"
+                        >
+                            <span>Business ID:</span> <span
+                                t-esc="company.company_registry"
+                            /><br />
+                        </t>
+                        <t name="company-vat" t-if="company.vat" class="row"><span
+                            >VAT</span> <span t-field="company.vat" /><br /></t>
+                        <t
+                            name="company-office"
+                            t-if="company.partner_id.city"
+                            class="row"
+                        ><span>Registered office:</span> <span
+                                t-field="company.partner_id.city"
+                            /><br /></t>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!--
+    <template id="external_layout_striped" inherit_id="web.external_layout_striped">
+        <xpath
+            expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+            position="replace"
+        >
+            <t t-call="web_report_sfs.header" />
+        </xpath>
+
+        <xpath expr="//t[@t-call='web.address_layout']" position="attributes" >
+            <attribute
+                name="t-att-class"
+            >'pt-{}'.format(company.web_address_size)</attribute>
+        </xpath>
+
+        <xpath
+            expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.footer" />
+        </xpath>
+    </template>
+    -->
+
+    <template id="external_layout_boxed" inherit_id="web.external_layout_boxed">
+        <xpath
+            expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+            position="replace"
+        >
+            <t t-call="web_report_sfs.header" />
+        </xpath>
+
+        <xpath expr="//t[@t-call='web.address_layout']" position="attributes" >
+            <attribute
+                name="t-att-class"
+            >'pt-{}'.format(company.web_address_size)</attribute>
+        </xpath>
+
+        <xpath
+            expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.footer" />
+        </xpath>
+    </template>
+
+    <template id="external_layout_bold" inherit_id="web.external_layout_bold">
+        <xpath
+            expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+            position="replace"
+        >
+            <t t-call="web_report_sfs.header" />
+        </xpath>
+
+        <xpath expr="//t[@t-call='web.address_layout']" position="attributes" >
+            <attribute
+                name="t-att-class"
+            >'pt-{}'.format(company.web_address_size)</attribute>
+        </xpath>
+
+        <xpath
+            expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.footer" />
+        </xpath>
+    </template>
+
+    <template id="external_layout_standard" inherit_id="web.external_layout_standard">
+        <xpath
+            expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+            position="replace"
+        >
+            <t t-call="web_report_sfs.header" />
+        </xpath>
+
+        <xpath expr="//t[@t-call='web.address_layout']" position="attributes" >
+            <attribute
+                name="t-att-class"
+            >'pt-{}'.format(company.web_address_size)</attribute>
+        </xpath>
+
+        <xpath
+            expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.footer" />
+        </xpath>
+    </template>
+
+    <template id="external_layout_folder" inherit_id="web.external_layout_folder">
+        <xpath
+            expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;h-0&apos;}}"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.header" />
+        </xpath>
+
+        <xpath expr="//t[@t-call='web.address_layout']" position="attributes" >
+            <attribute
+                name="t-att-class"
+            >'pt-{}'.format(company.web_address_size)</attribute>
+        </xpath>
+
+        <xpath
+            expr='//div[@t-attf-class="footer o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;mt-auto&apos;}}"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.footer" />
+        </xpath>
+    </template>
+
+    <template id="external_layout_wave" inherit_id="web.external_layout_wave">
+        <xpath
+            expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type != &apos;pdf&apos; and &apos;h-0&apos;}}"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.header" />
+        </xpath>
+
+        <xpath expr="//t[@t-call='web.address_layout']" position="attributes" >
+            <attribute
+                name="t-att-class"
+            >'pt-{}'.format(company.web_address_size)</attribute>
+        </xpath>
+
+        <xpath
+            expr='//div[@t-attf-class="o_footer_content {{report_type != &apos;pdf&apos; and &apos;position-absolute end-0 start-0 bottom-0 mx-5&apos;}} pt-5 text-center"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.footer" />
+        </xpath>
+    </template>
+
+    <template id="external_layout_bubble" inherit_id="web.external_layout_bubble">
+        <xpath
+            expr='//div[@t-attf-class="header o_company_#{company.id}_layout {{report_type == &apos;pdf&apos; and &apos;pt-5&apos;}}"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.header" />
+        </xpath>
+
+        <xpath expr="//t[@t-call='web.address_layout']" position="attributes" >
+            <attribute
+                name="t-att-class"
+            >'pt-{}'.format(company.web_address_size)</attribute>
+        </xpath>
+
+        <xpath
+            expr='//div[@t-attf-class="o_footer_content {{report_type != &apos;pdf&apos; and &apos;position-absolute end-0 start-0 bottom-0 mx-5&apos;}} pt-4 text-center"]'
+            position="replace"
+        >
+            <t t-call="web_report_sfs.footer" />
+        </xpath>
+    </template>
+
+</odoo>
