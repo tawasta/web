@@ -22,7 +22,6 @@ addon | version | maintainers | summary
 [web_content_attachment_download_count](web_content_attachment_download_count/) | 17.0.1.0.0 |  | Track how many times attachments have been accessed
 [web_content_group_permissions](web_content_group_permissions/) | 17.0.1.0.0 |  | Add group viewing permissions for web content (ir.attachment)
 [web_content_link_url](web_content_link_url/) | 17.0.1.0.1 |  | Web Content Link URL to share
-[web_editor_always_display_code_view](web_editor_always_display_code_view/) | 17.0.1.0.0 |  | Always display code view in web_editor without debug mode
 [web_form_view_show_all_smart_buttons](web_form_view_show_all_smart_buttons/) | 17.0.1.1.0 |  | Show all smart buttons on form view
 [web_report_sfs](web_report_sfs/) | 17.0.1.0.3 |  | Alter report layout to be similar to SFS 2487 standard formatting
 [web_report_sfs_footer_bank_info](web_report_sfs_footer_bank_info/) | 17.0.1.0.0 |  | Standard formatted report - Bank information in the footer
