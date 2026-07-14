@@ -8,7 +8,9 @@ from odoo import fields, models
 class IrAttachment(models.Model):
     _inherit = "ir.attachment"
 
-    link_url = fields.Char("Public Link URL", readonly=1, compute="_compute_link_url")
+    link_url = fields.Char(
+        "Public Link URL", readonly=True, compute="_compute_link_url"
+    )
 
     def _compute_link_url(self):
         base_url = self.env["ir.config_parameter"].sudo().get_param("web.base.url")
