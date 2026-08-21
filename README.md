@@ -18,6 +18,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[hide_internal_mail_notification](hide_internal_mail_notification/) | 17.0.1.0.0 |  | Hide Internal Mail Notification
 [systray_buttons_parameter](systray_buttons_parameter/) | 17.0.1.0.0 |  | Systray buttons parameter
 [web_content_attachment_download_count](web_content_attachment_download_count/) | 17.0.1.0.0 |  | Track how many times attachments have been accessed
 [web_content_group_permissions](web_content_group_permissions/) | 17.0.1.0.0 |  | Add group viewing permissions for web content (ir.attachment)

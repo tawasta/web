@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="mail_notification_layout_hide_internal_communication"
+        inherit_id="mail.mail_notification_layout"
+        name="Hide internal communication warning"
+    >
+
+        <xpath expr="//p[@t-if='subtype_internal']" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+
+    </template>
+</odoo>
