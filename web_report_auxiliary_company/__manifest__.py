@@ -21,7 +21,7 @@
 {
     "name": "Web report – Auxiliary company",
     "summary": "Auxiliary company used in PDF prints",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Reporting",
     "website": "https://github.com/tawasta/web",
     "author": "Futural",

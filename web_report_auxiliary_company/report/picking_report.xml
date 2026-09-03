@@ -7,7 +7,7 @@
   </template>
 
   <template id="report_picking" inherit_id="stock.report_picking">
-    <xpath expr="//t[@t-call='web.report_layout']" position="before">
+    <xpath expr="//t[@t-set='address']" position="before">
       <t t-set="company" t-value="o.report_company_id" />
     </xpath>
   </template>
