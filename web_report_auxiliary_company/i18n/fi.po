@@ -1,0 +1,86 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_report_auxiliary_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 07:18+0000\n"
+"PO-Revision-Date: 2026-09-03 10:23+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_account_bank_statement_line__aux_company_id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_account_move__aux_company_id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_purchase_order__aux_company_id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_sale_order__aux_company_id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_stock_picking__aux_company_id
+msgid "Auxiliary Company"
+msgstr "Aputoiminimi"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_account_move__display_name
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_ir_actions_report__display_name
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_ir_qweb__display_name
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_sale_order__display_name
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Näyttönimi"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_account_move__id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_ir_actions_report__id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_ir_qweb__id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_purchase_order__id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_sale_order__id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_stock_picking__id
+msgid "ID"
+msgstr "Tunnus"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model,name:web_report_auxiliary_company.model_account_move
+msgid "Journal Entry"
+msgstr "Kirjaus"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model,name:web_report_auxiliary_company.model_purchase_order
+msgid "Purchase Order"
+msgstr "Ostotilaus"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model,name:web_report_auxiliary_company.model_ir_qweb
+msgid "Qweb"
+msgstr "Qweb"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model,name:web_report_auxiliary_company.model_ir_actions_report
+msgid "Report Action"
+msgstr "Raportin toiminto"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_account_bank_statement_line__report_company_id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_account_move__report_company_id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_purchase_order__report_company_id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_sale_order__report_company_id
+#: model:ir.model.fields,field_description:web_report_auxiliary_company.field_stock_picking__report_company_id
+msgid "Report Company"
+msgstr "Yritys tulosteelle"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model,name:web_report_auxiliary_company.model_sale_order
+msgid "Sales Order"
+msgstr "Myyntitilaus"
+
+#. module: web_report_auxiliary_company
+#: model:ir.model,name:web_report_auxiliary_company.model_stock_picking
+msgid "Transfer"
+msgstr "Varastosiirto"
