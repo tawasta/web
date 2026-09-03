@@ -9,7 +9,7 @@
         expr="//group[@id='header_right_group']//field[@name='taxable_supply_date_placeholder']"
         position="after"
       >
-        <field name="aux_company_id" />
+        <field name="aux_company_id" domain="[('is_aux_company','=', True)]" />
         <field name="report_company_id" invisible="1" />
       </xpath>
     </field>
