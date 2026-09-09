@@ -1,0 +1,29 @@
+.o_systray_menu {
+  background: white;
+  border-radius: 8px;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.o_systray_item {
+  border: none;
+  transition: background 0.2s ease-in-out;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.o_systray_item:hover {
+  background: #f0f0f0;
+}
+
+.o_systray_icon {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.o_systray_title {
+  font-weight: 500;
+  color: #333;
+}
