@@ -31,3 +31,9 @@ class PurchaseOrder(models.Model):
             picking_vals["aux_company_id"] = self.aux_company_id.id
 
         return picking_vals
+
+    def action_rfq_send(self):
+        res = super(
+            PurchaseOrder, self.with_company(self.report_company_id)
+        ).action_rfq_send()
+        return res

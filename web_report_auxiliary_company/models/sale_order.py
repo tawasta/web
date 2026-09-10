@@ -32,3 +32,9 @@ class SaleOrder(models.Model):
             invoice_vals["aux_company_id"] = self.aux_company_id.id
 
         return invoice_vals
+
+    def action_quotation_send(self):
+        res = super(
+            SaleOrder, self.with_company(self.report_company_id)
+        ).action_quotation_send()
+        return res

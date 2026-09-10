@@ -11,6 +11,9 @@ Web report – Auxiliary company
     Use an other company, Auxiliary Company, in sales, purchases, invoices and pickings.
     This company is set as the company for their respective PDF prints.
 
+    Sending emails from sale, invoice and purchase are set to use Auxiliary company.
+    But remember to modify their email templates to have a sender properly set.
+
     Auxiliary company goes to the created deliveries of sales and also to the receipts
     created from purchases. Invoices and bills inherit auxiliary company from sales
     and purchases. This inheritance is in place only when a new invoice or picking
