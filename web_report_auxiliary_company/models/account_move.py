@@ -15,3 +15,9 @@ class AccountMove(models.Model):
     def _compute_report_company_id(self):
         for move in self:
             move.report_company_id = move.aux_company_id or move.company_id
+
+    def action_invoice_sent(self):
+        res = super(
+            AccountMove, self.with_company(self.report_company_id)
+        ).action_invoice_sent()
+        return res
