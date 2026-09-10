@@ -1,4 +1,5 @@
 from . import account_move
+from . import base
 from . import ir_actions_report
 from . import purchase_order
 from . import qweb
