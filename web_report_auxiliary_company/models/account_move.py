@@ -18,6 +18,6 @@ class AccountMove(models.Model):
 
     def action_invoice_sent(self):
         res = super(
-            AccountMove, self.with_company(self.report_company_id)
+            AccountMove, self.sudo().with_company(self.report_company_id)
         ).action_invoice_sent()
         return res
