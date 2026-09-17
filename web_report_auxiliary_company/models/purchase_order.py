@@ -34,6 +34,6 @@ class PurchaseOrder(models.Model):
 
     def action_rfq_send(self):
         res = super(
-            PurchaseOrder, self.with_company(self.report_company_id)
+            PurchaseOrder, self.sudo().with_company(self.report_company_id)
         ).action_rfq_send()
         return res

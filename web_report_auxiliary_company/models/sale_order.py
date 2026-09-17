@@ -35,6 +35,6 @@ class SaleOrder(models.Model):
 
     def action_quotation_send(self):
         res = super(
-            SaleOrder, self.with_company(self.report_company_id)
+            SaleOrder, self.sudo().with_company(self.report_company_id)
         ).action_quotation_send()
         return res
