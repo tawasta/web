@@ -1,8 +1,8 @@
 /** @odoo-module **/
 
-import {registry} from "@web/core/registry";
 import {Component, useState} from "@odoo/owl";
 import {Dropdown} from "@web/core/dropdown/dropdown";
+import {registry} from "@web/core/registry";
 import {useService} from "@web/core/utils/hooks";
 
 export class SystrayButtons extends Component {
