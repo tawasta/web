@@ -33,6 +33,7 @@ addon | version | maintainers | summary
 [web_report_sfs_table_vertical_border_lines](web_report_sfs_table_vertical_border_lines/) | 17.0.1.1.1 |  | Add a vertical border lines to report table. Use with QWeb reports
 [web_responsive_modal_toolbar_visibility_fix](web_responsive_modal_toolbar_visibility_fix/) | 17.0.1.0.0 |  | Bring the WYSIWYG toolbar to top
 [web_tree_view_limit](web_tree_view_limit/) | 17.0.1.0.0 |  | Change General Tree-view record limit from settings
+[web_widget_many2many_binary_url](web_widget_many2many_binary_url/) | 17.0.1.0.0 |  | Same as many2many_binary but does not force download
 [x2many_2d_matrix_renderer_patch](x2many_2d_matrix_renderer_patch/) | 17.0.1.0.0 |  | Override and extend the 2D matrix renderer for x2many fields
 
 
