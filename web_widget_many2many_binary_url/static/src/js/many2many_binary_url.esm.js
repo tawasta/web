@@ -1,9 +1,6 @@
-/** @odoo-module **/
-
-import {_t} from "@web/core/l10n/translation";
-import {registry} from "@web/core/registry";
 import {FileInput} from "@web/core/file_input/file_input";
 import {Many2ManyBinaryField} from "@web/views/fields/many2many_binary/many2many_binary_field";
+import {registry} from "@web/core/registry";
 
 export class Many2ManyBinaryUrlField extends Many2ManyBinaryField {
     static template = "web_widget_many2many_binary_url.Many2ManyBinaryUrlField";
