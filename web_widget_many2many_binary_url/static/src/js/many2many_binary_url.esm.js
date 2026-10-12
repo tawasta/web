@@ -1,3 +1,5 @@
+/** @odoo-module **/
+
 import {FileInput} from "@web/core/file_input/file_input";
 import {Many2ManyBinaryField} from "@web/views/fields/many2many_binary/many2many_binary_field";
 import {registry} from "@web/core/registry";
