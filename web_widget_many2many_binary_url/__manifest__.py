@@ -33,7 +33,7 @@
     "assets": {
         "web.assets_backend": [
             "web_widget_many2many_binary_url/static/src/xml/many2many_binary_url.xml",
-            "web_widget_many2many_binary_url/static/src/js/many2many_binary_url.js",
+            "web_widget_many2many_binary_url/static/src/js/many2many_binary_url.esm.js",
         ]
     },
 }
