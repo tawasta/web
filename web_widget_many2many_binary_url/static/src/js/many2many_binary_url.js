@@ -1,11 +1,11 @@
 /** @odoo-module **/
 
-import { _t } from "@web/core/l10n/translation";
-import { registry } from "@web/core/registry";
-import { useService } from "@web/core/utils/hooks";
-import { standardFieldProps } from "@web/views/fields/standard_field_props";
-import { FileInput } from "@web/core/file_input/file_input";
-import { Many2ManyBinaryField } from "@web/views/fields/many2many_binary/many2many_binary_field";
+import {_t} from "@web/core/l10n/translation";
+import {registry} from "@web/core/registry";
+import {useService} from "@web/core/utils/hooks";
+import {standardFieldProps} from "@web/views/fields/standard_field_props";
+import {FileInput} from "@web/core/file_input/file_input";
+import {Many2ManyBinaryField} from "@web/views/fields/many2many_binary/many2many_binary_field";
 
 export class Many2ManyBinaryUrlField extends Many2ManyBinaryField {
     static template = "web_widget_many2many_binary_url.Many2ManyBinaryUrlField";
@@ -13,11 +13,11 @@ export class Many2ManyBinaryUrlField extends Many2ManyBinaryField {
         FileInput,
     };
     static props = {
-        ...super.props
+        ...super.props,
     };
 
     setup() {
-        super.setup()
+        super.setup();
     }
 
     get uploadText() {
@@ -77,10 +77,10 @@ export const many2ManyBinaryUrlField = {
     supportedTypes: ["many2many"],
     isEmpty: () => false,
     relatedFields: [
-        { name: "name", type: "char" },
-        { name: "mimetype", type: "char" },
+        {name: "name", type: "char"},
+        {name: "mimetype", type: "char"},
     ],
-    extractProps: ({ attrs, options }) => ({
+    extractProps: ({attrs, options}) => ({
         acceptedFileExtensions: options.accepted_file_extensions,
         className: attrs.class,
         numberOfFiles: options.number_of_files,
