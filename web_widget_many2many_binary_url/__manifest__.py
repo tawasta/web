@@ -21,7 +21,7 @@
 {
     "name": "Widget many2many_binary_url",
     "summary": "Same as many2many_binary but does not force download",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Web",
     "website": "https://github.com/tawasta/web",
     "author": "Futural",
