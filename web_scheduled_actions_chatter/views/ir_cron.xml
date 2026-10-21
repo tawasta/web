@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_ir_cron_view_form" model="ir.ui.view">
+        <field name="name">view.ir.cron.view.from</field>
+        <field name="model">ir.cron</field>
+        <field name="inherit_id" ref="base.ir_cron_view_form" />
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </field>
+        </field>
+    </record>
+</odoo>
