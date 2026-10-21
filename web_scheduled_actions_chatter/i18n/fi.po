@@ -1,0 +1,142 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_scheduled_actions_chatter
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-20 12:40+0000\n"
+"PO-Revision-Date: 2026-10-20 15:42+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_needaction
+msgid "Action Needed"
+msgstr "Vaatii toimenpiteitä"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__active
+msgid "Active"
+msgstr "Aktiivinen"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_attachment_count
+msgid "Attachment Count"
+msgstr "Liitteiden määrä"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__display_name
+msgid "Display Name"
+msgstr "Näyttönimi"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__failure_count
+msgid "Failure Count"
+msgstr "Epäonnistumisten määrä"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_follower_ids
+msgid "Followers"
+msgstr "Seuraajat"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seuraajat (kumppanit)"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__has_message
+msgid "Has Message"
+msgstr "Sisältää viestin"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__id
+msgid "ID"
+msgstr "ID"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,help:web_scheduled_actions_chatter.field_ir_cron__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Jos valittu, uudet viestit vaativat huomiotasi."
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,help:web_scheduled_actions_chatter.field_ir_cron__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Jos valittu, joitakin viestejä ei ole toimitettu."
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__interval_number
+msgid "Interval Number"
+msgstr "Välien arvo"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__interval_type
+msgid "Interval Unit"
+msgstr "Väliyksikkö"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_is_follower
+msgid "Is Follower"
+msgstr "On seuraaja"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_has_error
+msgid "Message Delivery error"
+msgstr "Viestin toimitusvirhe"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_ids
+msgid "Messages"
+msgstr "Viestit"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Toimenpiteiden määrä"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__message_has_error_counter
+msgid "Number of errors"
+msgstr "Virheiden määrä"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,help:web_scheduled_actions_chatter.field_ir_cron__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Toimenpiteitä vaativien viestien määrä"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,help:web_scheduled_actions_chatter.field_ir_cron__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Toimitusvirheellisten viestien määrä"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,help:web_scheduled_actions_chatter.field_ir_cron__interval_number
+msgid "Repeat every x."
+msgstr "Toista joka x."
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model,name:web_scheduled_actions_chatter.model_ir_cron
+msgid "Scheduled Actions"
+msgstr "Aikataulutetut toiminnot"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,field_description:web_scheduled_actions_chatter.field_ir_cron__user_id
+msgid "Scheduler User"
+msgstr "Aikatauluttaja-käyttäjä"
+
+#. module: web_scheduled_actions_chatter
+#: model:ir.model.fields,help:web_scheduled_actions_chatter.field_ir_cron__failure_count
+msgid ""
+"The number of consecutive failures of this job. It is automatically reset "
+"on success."
+msgstr ""
+"Tämän työn peräkkäisten epäonnistumisten määrä. Se nollautuu "
+"automaattisesti onnistumisen yhteydessä."
