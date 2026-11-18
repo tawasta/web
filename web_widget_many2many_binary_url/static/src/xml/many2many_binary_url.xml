@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t
+        t-name="web_widget_many2many_binary_url.Many2ManyBinaryUrlField"
+        t-inherit="web.Many2ManyBinaryField"
+        t-inherit-mode="primary"
+    >
+        <xpath
+            expr="//t[@t-call='web.Many2ManyBinaryField.attachment_preview']"
+            position="attributes"
+        >
+            <attribute
+                name="t-call"
+            >web_widget_many2many_binary_url.Many2ManyBinaryUrlField.attachment_preview</attribute>
+        </xpath>
+    </t>
+
+    <t
+        t-name="web_widget_many2many_binary_url.Many2ManyBinaryUrlField.attachment_preview"
+        t-inherit="web.Many2ManyBinaryField.attachment_preview"
+        t-inherit-mode="primary"
+    >
+        <xpath expr="//div[hasclass('o_image_box')]" position="attributes">
+            <attribute name="t-att-data-tooltip">'Preview ' + file.name</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_image_box')]/a" position="attributes">
+            <attribute name="aria-label">Preview</attribute>
+            <attribute name="download" />
+            <attribute name="target">_blank</attribute>
+        </xpath>
+        <xpath expr="//div[@class='caption']/a" position="attributes">
+            <attribute name="t-att-data-tooltip">'Preview ' + file.name</attribute>
+            <attribute name="download" />
+            <attribute name="target">_blank</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('caption', 'small')]/a" position="attributes">
+            <attribute name="download" />
+            <attribute name="target">_blank</attribute>
+        </xpath>
+    </t>
+
+</templates>
