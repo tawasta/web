@@ -1,0 +1,2 @@
+- Joona Isoaho \<joona.isoaho@futural.fi\>
+- Valtteri Lattu \<valtteri.lattu@futural.fi\>
